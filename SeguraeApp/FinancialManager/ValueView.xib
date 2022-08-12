@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValueView" customModule="SeguraeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmButton" destination="8oM-QC-4Ah" id="S0t-fF-NMr"/>
+                <outlet property="descriptionLabel" destination="coL-Wu-2hf" id="ccY-mi-hB5"/>
+                <outlet property="illustrationImageView" destination="aMM-DU-oMf" id="OeR-US-hKI"/>
+                <outlet property="valueTextField" destination="Udr-9p-Y1g" id="WwJ-r5-8v7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="352"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_exit" translatesAutoresizingMaskIntoConstraints="NO" id="aMM-DU-oMf">
+                    <rect key="frame" x="169" y="68" width="54" height="54"/>
+                    <color key="backgroundColor" red="1" green="0.23921568627450979" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="nuY-yK-JI1"/>
+                        <constraint firstAttribute="height" constant="54" id="qsk-Kc-EV8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite o valor de saída" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coL-Wu-2hf">
+                    <rect key="frame" x="116" y="138" width="160" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex.: R$ 0,00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Udr-9p-Y1g">
+                    <rect key="frame" x="86" y="174" width="220" height="34"/>
+                    <color key="backgroundColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="IVK-bc-TnH"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oM-QC-4Ah">
+                    <rect key="frame" x="164" y="272" width="64" height="64"/>
+                    <color key="backgroundColor" red="0.34901960784313724" green="0.90980392156862744" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="CLD-pq-VXh"/>
+                        <constraint firstAttribute="height" constant="64" id="HvL-KC-3FT"/>
+                    </constraints>
+                    <color key="tintColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="checkmark" catalog="system"/>
+                    <connections>
+                        <action selector="confirmAction:" destination="-1" eventType="touchUpInside" id="v1y-CB-OmZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8oM-QC-4Ah" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GKc-rb-UQ9"/>
+                <constraint firstItem="Udr-9p-Y1g" firstAttribute="top" secondItem="coL-Wu-2hf" secondAttribute="bottom" constant="16" id="GYK-Dg-14z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8oM-QC-4Ah" secondAttribute="bottom" constant="16" id="Kdd-qC-VTA"/>
+                <constraint firstItem="coL-Wu-2hf" firstAttribute="top" secondItem="aMM-DU-oMf" secondAttribute="bottom" constant="16" id="NPT-Ek-wbA"/>
+                <constraint firstItem="coL-Wu-2hf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OLv-Vj-D4G"/>
+                <constraint firstItem="aMM-DU-oMf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pjs-eP-hwG"/>
+                <constraint firstItem="aMM-DU-oMf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="u4g-zH-gxy"/>
+                <constraint firstItem="Udr-9p-Y1g" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="x26-vu-pUl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="121.73913043478262" y="-192.85714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="img_exit" width="32" height="32"/>
+    </resources>
+</document>

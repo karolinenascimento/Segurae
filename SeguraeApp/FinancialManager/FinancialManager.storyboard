@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="78v-Tx-DeT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="akf-71-r0g">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -47,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="80"/>
+            <point key="canvasLocation" x="-130" y="80"/>
         </scene>
         <!--Exit Financial Value View Controller-->
         <scene sceneID="IAi-H4-Psl">
@@ -88,7 +88,145 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lw2-Lz-tjw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="80"/>
+            <point key="canvasLocation" x="626" y="80"/>
+        </scene>
+        <!--Exit Value View Controller-->
+        <scene sceneID="yvH-Ca-YHo">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3A3-cd-9hG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="jeP-Gz-SqF" customClass="ExitValueViewController" customModule="SeguraeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XFO-6o-TEA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mea-8Q-rUb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1H-fb-6dV">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-vG-irf" customClass="InformationView" customModule="SeguraeApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="rFw-Wg-N1E"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUa-4a-GGr" customClass="ValueView" customModule="SeguraeApp" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="124" width="382" height="340"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="340" id="QiI-8s-faO"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="cpa-vG-irf" firstAttribute="top" secondItem="o1H-fb-6dV" secondAttribute="top" id="0aU-r6-S32"/>
+                                            <constraint firstAttribute="trailing" secondItem="TUa-4a-GGr" secondAttribute="trailing" constant="16" id="2nx-f8-jkC"/>
+                                            <constraint firstItem="cpa-vG-irf" firstAttribute="leading" secondItem="o1H-fb-6dV" secondAttribute="leading" id="PmQ-mk-LgD"/>
+                                            <constraint firstItem="TUa-4a-GGr" firstAttribute="leading" secondItem="o1H-fb-6dV" secondAttribute="leading" constant="16" id="ZSX-8P-4XE"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TUa-4a-GGr" secondAttribute="bottom" constant="24" id="erb-ar-hOR"/>
+                                            <constraint firstItem="TUa-4a-GGr" firstAttribute="top" secondItem="cpa-vG-irf" secondAttribute="bottom" constant="24" id="mnu-B1-2W3"/>
+                                            <constraint firstAttribute="trailing" secondItem="cpa-vG-irf" secondAttribute="trailing" id="xre-2C-40D"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="o1H-fb-6dV" firstAttribute="leading" secondItem="Mea-8Q-rUb" secondAttribute="leading" id="CGp-Sd-e3q"/>
+                                    <constraint firstItem="o1H-fb-6dV" firstAttribute="trailing" secondItem="Mea-8Q-rUb" secondAttribute="trailing" id="bS2-pf-1an"/>
+                                    <constraint firstItem="o1H-fb-6dV" firstAttribute="top" secondItem="Mea-8Q-rUb" secondAttribute="top" id="kjk-ZY-ikn"/>
+                                    <constraint firstItem="o1H-fb-6dV" firstAttribute="bottom" secondItem="Mea-8Q-rUb" secondAttribute="bottom" id="uge-U3-S5M"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rWa-e0-N84"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o1H-fb-6dV" firstAttribute="width" secondItem="XFO-6o-TEA" secondAttribute="width" id="4Qz-GQ-YZh"/>
+                            <constraint firstAttribute="bottom" secondItem="Mea-8Q-rUb" secondAttribute="bottom" id="Goy-sc-C2u"/>
+                            <constraint firstItem="Mea-8Q-rUb" firstAttribute="leading" secondItem="rWa-e0-N84" secondAttribute="leading" id="JDm-kl-NHn"/>
+                            <constraint firstItem="Mea-8Q-rUb" firstAttribute="top" secondItem="XFO-6o-TEA" secondAttribute="top" id="YZQ-Kt-dev"/>
+                            <constraint firstItem="o1H-fb-6dV" firstAttribute="height" secondItem="XFO-6o-TEA" secondAttribute="height" priority="250" id="eZC-Pv-DTT"/>
+                            <constraint firstItem="Mea-8Q-rUb" firstAttribute="trailing" secondItem="rWa-e0-N84" secondAttribute="trailing" id="ufX-me-G34"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="informationView" destination="cpa-vG-irf" id="pJ5-RX-zE3"/>
+                        <outlet property="valueView" destination="TUa-4a-GGr" id="Pz6-yG-FNU"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1306" y="80"/>
+        </scene>
+        <!--Entry Value View Controller-->
+        <scene sceneID="Ppx-bN-hKc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wD2-d4-VF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="akf-71-r0g" customClass="EntryValueViewController" customModule="SeguraeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Yf-fM-OJV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhW-mb-ewU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OG9-rb-9II">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXw-qG-vbW" customClass="InformationView" customModule="SeguraeApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="8Ms-Ao-kVP"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqF-9W-mLy" customClass="ValueView" customModule="SeguraeApp" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="124" width="382" height="340"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="340" id="kiq-oU-9z1"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="cqF-9W-mLy" firstAttribute="top" secondItem="lXw-qG-vbW" secondAttribute="bottom" constant="24" id="3k8-M1-Ai3"/>
+                                            <constraint firstItem="lXw-qG-vbW" firstAttribute="top" secondItem="OG9-rb-9II" secondAttribute="top" id="DSM-Qh-RVu"/>
+                                            <constraint firstItem="lXw-qG-vbW" firstAttribute="leading" secondItem="OG9-rb-9II" secondAttribute="leading" id="cWe-AG-pMY"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cqF-9W-mLy" secondAttribute="bottom" constant="24" id="k1S-c0-gDT"/>
+                                            <constraint firstAttribute="trailing" secondItem="lXw-qG-vbW" secondAttribute="trailing" id="nWP-M2-UPd"/>
+                                            <constraint firstItem="cqF-9W-mLy" firstAttribute="leading" secondItem="OG9-rb-9II" secondAttribute="leading" constant="16" id="xd9-r9-JBd"/>
+                                            <constraint firstAttribute="trailing" secondItem="cqF-9W-mLy" secondAttribute="trailing" constant="16" id="ztW-5O-IEZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OG9-rb-9II" firstAttribute="bottom" secondItem="YhW-mb-ewU" secondAttribute="bottom" id="Cgl-kF-fGo"/>
+                                    <constraint firstItem="OG9-rb-9II" firstAttribute="leading" secondItem="YhW-mb-ewU" secondAttribute="leading" id="FAc-aT-hmx"/>
+                                    <constraint firstItem="OG9-rb-9II" firstAttribute="trailing" secondItem="YhW-mb-ewU" secondAttribute="trailing" id="MZt-MP-2zn"/>
+                                    <constraint firstItem="OG9-rb-9II" firstAttribute="top" secondItem="YhW-mb-ewU" secondAttribute="top" id="eRs-06-Uz0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N8G-H7-UQg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YhW-mb-ewU" firstAttribute="trailing" secondItem="N8G-H7-UQg" secondAttribute="trailing" id="E05-Cp-yN6"/>
+                            <constraint firstItem="YhW-mb-ewU" firstAttribute="top" secondItem="1Yf-fM-OJV" secondAttribute="top" id="Fh2-AJ-RKL"/>
+                            <constraint firstItem="YhW-mb-ewU" firstAttribute="leading" secondItem="N8G-H7-UQg" secondAttribute="leading" id="Inf-bc-DKh"/>
+                            <constraint firstItem="OG9-rb-9II" firstAttribute="width" secondItem="1Yf-fM-OJV" secondAttribute="width" id="icB-S0-G4Q"/>
+                            <constraint firstAttribute="bottom" secondItem="YhW-mb-ewU" secondAttribute="bottom" id="tIa-2n-LZI"/>
+                            <constraint firstItem="OG9-rb-9II" firstAttribute="height" secondItem="1Yf-fM-OJV" secondAttribute="height" priority="250" id="tLq-ky-vch"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="informationView" destination="lXw-qG-vbW" id="wEi-vy-mDv"/>
+                        <outlet property="valueView" destination="cqF-9W-mLy" id="zgs-XI-2zC"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2026" y="80"/>
         </scene>
     </scenes>
     <resources>

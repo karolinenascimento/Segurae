@@ -20,6 +20,10 @@
 		D530DF8128A6B9F400AE6967 /* EnterFinancialValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D530DF8028A6B9F400AE6967 /* EnterFinancialValueViewController.swift */; };
 		D530DF8328A6BA0C00AE6967 /* FinancialManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D530DF8228A6BA0C00AE6967 /* FinancialManager.storyboard */; };
 		D530DF8528A6CE8C00AE6967 /* ExitFinancialValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D530DF8428A6CE8C00AE6967 /* ExitFinancialValueViewController.swift */; };
+		D530DF8728A7013A00AE6967 /* ValueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D530DF8628A7013A00AE6967 /* ValueView.xib */; };
+		D530DF8928A701D700AE6967 /* ValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D530DF8828A701D700AE6967 /* ValueView.swift */; };
+		D530DF8B28A708B200AE6967 /* ExitValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D530DF8A28A708B200AE6967 /* ExitValueViewController.swift */; };
+		D530DF8D28A714F700AE6967 /* EntryValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D530DF8C28A714F700AE6967 /* EntryValueViewController.swift */; };
 		D592293628A479BA001A3762 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592293528A479BA001A3762 /* HomeViewController.swift */; };
 		D592293828A479DB001A3762 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D592293728A479DB001A3762 /* Home.storyboard */; };
 		D592293A28A482BA001A3762 /* ValuesManagerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D592293928A482BA001A3762 /* ValuesManagerView.xib */; };
@@ -42,6 +46,10 @@
 		D530DF8028A6B9F400AE6967 /* EnterFinancialValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterFinancialValueViewController.swift; sourceTree = "<group>"; };
 		D530DF8228A6BA0C00AE6967 /* FinancialManager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FinancialManager.storyboard; sourceTree = "<group>"; };
 		D530DF8428A6CE8C00AE6967 /* ExitFinancialValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitFinancialValueViewController.swift; sourceTree = "<group>"; };
+		D530DF8628A7013A00AE6967 /* ValueView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValueView.xib; sourceTree = "<group>"; };
+		D530DF8828A701D700AE6967 /* ValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueView.swift; sourceTree = "<group>"; };
+		D530DF8A28A708B200AE6967 /* ExitValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitValueViewController.swift; sourceTree = "<group>"; };
+		D530DF8C28A714F700AE6967 /* EntryValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryValueViewController.swift; sourceTree = "<group>"; };
 		D592293528A479BA001A3762 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D592293728A479DB001A3762 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D592293928A482BA001A3762 /* ValuesManagerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValuesManagerView.xib; sourceTree = "<group>"; };
@@ -95,12 +103,16 @@
 			isa = PBXGroup;
 			children = (
 				D530DF8228A6BA0C00AE6967 /* FinancialManager.storyboard */,
+				D530DF8A28A708B200AE6967 /* ExitValueViewController.swift */,
 				D530DF8028A6B9F400AE6967 /* EnterFinancialValueViewController.swift */,
 				D530DF8428A6CE8C00AE6967 /* ExitFinancialValueViewController.swift */,
 				D530DF7828A6A1F200AE6967 /* InformationView.xib */,
 				D530DF7A28A6A20C00AE6967 /* InformationView.swift */,
 				D530DF7D28A6A6A300AE6967 /* InputValueTableViewCell.xib */,
 				D530DF7C28A6A6A300AE6967 /* InputValueTableViewCell.swift */,
+				D530DF8628A7013A00AE6967 /* ValueView.xib */,
+				D530DF8828A701D700AE6967 /* ValueView.swift */,
+				D530DF8C28A714F700AE6967 /* EntryValueViewController.swift */,
 			);
 			path = FinancialManager;
 			sourceTree = "<group>";
@@ -174,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D530DF8728A7013A00AE6967 /* ValueView.xib in Resources */,
 				D592293A28A482BA001A3762 /* ValuesManagerView.xib in Resources */,
 				D530DF7F28A6A6A300AE6967 /* InputValueTableViewCell.xib in Resources */,
 				D530DF8328A6BA0C00AE6967 /* FinancialManager.storyboard in Resources */,
@@ -194,13 +207,16 @@
 			files = (
 				D511A27528A1C12A008D6E69 /* ViewController.swift in Sources */,
 				D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */,
+				D530DF8B28A708B200AE6967 /* ExitValueViewController.swift in Sources */,
 				D511A27328A1C12A008D6E69 /* SceneDelegate.swift in Sources */,
 				D530DF8128A6B9F400AE6967 /* EnterFinancialValueViewController.swift in Sources */,
 				D530DF7B28A6A20C00AE6967 /* InformationView.swift in Sources */,
 				D530DF8528A6CE8C00AE6967 /* ExitFinancialValueViewController.swift in Sources */,
+				D530DF8928A701D700AE6967 /* ValueView.swift in Sources */,
 				D592293628A479BA001A3762 /* HomeViewController.swift in Sources */,
 				D592293C28A482CC001A3762 /* ValuesManagerView.swift in Sources */,
 				D530DF7E28A6A6A300AE6967 /* InputValueTableViewCell.swift in Sources */,
+				D530DF8D28A714F700AE6967 /* EntryValueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
