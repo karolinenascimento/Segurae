@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="78v-Tx-DeT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Enter Financial Value View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="EnterFinancialValueViewController" customModule="SeguraeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOb-na-kcf" customClass="InformationView" customModule="SeguraeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="csl-Ku-zeT"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XSG-qr-fbl">
+                                <rect key="frame" x="0.0" y="152" width="414" height="710"/>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XSG-qr-fbl" firstAttribute="top" secondItem="TOb-na-kcf" secondAttribute="bottom" constant="8" id="0PX-mH-ZQt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="XSG-qr-fbl" secondAttribute="bottom" id="1L8-cc-ywt"/>
+                            <constraint firstItem="XSG-qr-fbl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1UE-Eu-XeE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XSG-qr-fbl" secondAttribute="trailing" id="4NE-he-ghM"/>
+                            <constraint firstItem="TOb-na-kcf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6tD-3m-1ji"/>
+                            <constraint firstItem="TOb-na-kcf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DVz-Ef-H18"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TOb-na-kcf" secondAttribute="trailing" id="Pen-2a-zg6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="informationView" destination="TOb-na-kcf" id="8tv-Em-Y4c"/>
+                        <outlet property="tableView" destination="XSG-qr-fbl" id="SDV-SB-yc2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="80"/>
+        </scene>
+        <!--Exit Financial Value View Controller-->
+        <scene sceneID="IAi-H4-Psl">
+            <objects>
+                <viewController id="78v-Tx-DeT" customClass="ExitFinancialValueViewController" customModule="SeguraeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CcB-DE-eHq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bh-Q8-xY4" customClass="InformationView" customModule="SeguraeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="FXm-bK-rkn"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Pvo-cj-SKJ">
+                                <rect key="frame" x="0.0" y="152" width="414" height="710"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wLa-NS-HRZ"/>
+                        <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Bh-Q8-xY4" firstAttribute="leading" secondItem="wLa-NS-HRZ" secondAttribute="leading" id="JdE-E0-836"/>
+                            <constraint firstItem="Pvo-cj-SKJ" firstAttribute="top" secondItem="7Bh-Q8-xY4" secondAttribute="bottom" constant="8" id="YBD-J0-eIf"/>
+                            <constraint firstItem="7Bh-Q8-xY4" firstAttribute="top" secondItem="wLa-NS-HRZ" secondAttribute="top" id="igJ-hW-F6V"/>
+                            <constraint firstItem="wLa-NS-HRZ" firstAttribute="trailing" secondItem="Pvo-cj-SKJ" secondAttribute="trailing" id="pEI-ze-ejg"/>
+                            <constraint firstItem="wLa-NS-HRZ" firstAttribute="bottom" secondItem="Pvo-cj-SKJ" secondAttribute="bottom" id="pnj-4a-9vU"/>
+                            <constraint firstItem="Pvo-cj-SKJ" firstAttribute="leading" secondItem="wLa-NS-HRZ" secondAttribute="leading" id="psi-WO-JA2"/>
+                            <constraint firstItem="wLa-NS-HRZ" firstAttribute="trailing" secondItem="7Bh-Q8-xY4" secondAttribute="trailing" id="rpX-vj-jVv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="informationView" destination="7Bh-Q8-xY4" id="yXQ-kl-TLG"/>
+                        <outlet property="tableView" destination="Pvo-cj-SKJ" id="6fc-3X-AcB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lw2-Lz-tjw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

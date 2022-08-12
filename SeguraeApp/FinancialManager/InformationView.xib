@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InformationView" customModule="SeguraeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="dT3-nO-UsZ" id="llC-yp-2Km"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="521" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysp-2m-OZh">
+                    <rect key="frame" x="24" y="16" width="4" height="112"/>
+                    <color key="backgroundColor" red="0.34901960784313724" green="0.90980392156862744" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="maB-d3-PC0"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aqui você pode editar e ajustar o saldo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT3-nO-UsZ">
+                    <rect key="frame" x="52" y="16" width="445" height="112"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dT3-nO-UsZ" secondAttribute="trailing" constant="24" id="5ZN-Kd-f2f"/>
+                <constraint firstItem="ysp-2m-OZh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="6EA-ID-3Bd"/>
+                <constraint firstAttribute="bottom" secondItem="ysp-2m-OZh" secondAttribute="bottom" constant="16" id="A5s-h8-Ark"/>
+                <constraint firstItem="dT3-nO-UsZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="jCh-1H-7lk"/>
+                <constraint firstItem="ysp-2m-OZh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="tJX-gc-IiN"/>
+                <constraint firstItem="dT3-nO-UsZ" firstAttribute="leading" secondItem="ysp-2m-OZh" secondAttribute="trailing" constant="24" id="xBE-3x-0rs"/>
+                <constraint firstAttribute="bottom" secondItem="dT3-nO-UsZ" secondAttribute="bottom" constant="16" id="y7f-bJ-NJ9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="141" y="-163"/>
+        </view>
+    </objects>
+</document>
