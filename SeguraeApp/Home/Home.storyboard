@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aE0-qO-Te0">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="aE0-qO-Te0">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeT-Do-QOe">
@@ -38,6 +38,9 @@ Vinicius!</string>
                                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="gearshape" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="configAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="WrY-M1-hdS"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYv-TX-Vzu">
                                                         <rect key="frame" x="24" y="66" width="93" height="93"/>
@@ -82,18 +85,49 @@ Vinicius!</string>
                                                     <constraint firstAttribute="height" constant="230" id="aKk-mT-kVT"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDb-Gu-dZ4">
+                                                <rect key="frame" x="32" y="693" width="364" height="120"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qq-aI-ibD">
+                                                        <rect key="frame" x="24" y="16" width="4" height="88"/>
+                                                        <color key="backgroundColor" red="0.34901960784313724" green="0.90980392156862744" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="4" id="2rM-Ke-661"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ativar notificação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltI-2G-q9f">
+                                                        <rect key="frame" x="44" y="49" width="139" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="ltI-2G-q9f" firstAttribute="leading" secondItem="5qq-aI-ibD" secondAttribute="trailing" constant="16" id="Hg8-ye-SlK"/>
+                                                    <constraint firstItem="5qq-aI-ibD" firstAttribute="leading" secondItem="MDb-Gu-dZ4" secondAttribute="leading" constant="24" id="JYD-US-mga"/>
+                                                    <constraint firstAttribute="height" constant="120" id="MWp-Pp-joF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5qq-aI-ibD" secondAttribute="bottom" constant="16" id="Nzk-ip-Vlr"/>
+                                                    <constraint firstItem="ltI-2G-q9f" firstAttribute="centerY" secondItem="MDb-Gu-dZ4" secondAttribute="centerY" id="Wi9-Wb-2UU"/>
+                                                    <constraint firstItem="5qq-aI-ibD" firstAttribute="top" secondItem="MDb-Gu-dZ4" secondAttribute="top" constant="16" id="eP8-ty-uJC"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="shb-Mi-qVi" secondAttribute="trailing" id="9Mt-Lg-Ntg"/>
+                                            <constraint firstAttribute="trailing" secondItem="MDb-Gu-dZ4" secondAttribute="trailing" constant="32" id="AZz-Tj-1W3"/>
                                             <constraint firstItem="bNu-2R-h2G" firstAttribute="leading" secondItem="VeT-Do-QOe" secondAttribute="leading" constant="32" id="FEj-ky-J63"/>
                                             <constraint firstItem="bNu-2R-h2G" firstAttribute="top" secondItem="JWZ-Jc-51S" secondAttribute="bottom" constant="16" id="L3A-Km-a72"/>
+                                            <constraint firstItem="MDb-Gu-dZ4" firstAttribute="top" secondItem="bNu-2R-h2G" secondAttribute="bottom" constant="16" id="OMf-dQ-9ut"/>
                                             <constraint firstItem="shb-Mi-qVi" firstAttribute="leading" secondItem="VeT-Do-QOe" secondAttribute="leading" id="Tdg-91-5If"/>
                                             <constraint firstAttribute="trailing" secondItem="bNu-2R-h2G" secondAttribute="trailing" constant="32" id="bg0-Kw-yGY"/>
                                             <constraint firstAttribute="trailing" secondItem="JWZ-Jc-51S" secondAttribute="trailing" constant="32" id="keB-Da-1mh"/>
+                                            <constraint firstItem="MDb-Gu-dZ4" firstAttribute="leading" secondItem="VeT-Do-QOe" secondAttribute="leading" constant="32" id="mGo-OD-xYS"/>
                                             <constraint firstItem="JWZ-Jc-51S" firstAttribute="leading" secondItem="VeT-Do-QOe" secondAttribute="leading" constant="32" id="mtX-og-SA5"/>
                                             <constraint firstItem="shb-Mi-qVi" firstAttribute="top" secondItem="VeT-Do-QOe" secondAttribute="top" id="ruX-cY-MWA"/>
                                             <constraint firstItem="JWZ-Jc-51S" firstAttribute="top" secondItem="shb-Mi-qVi" secondAttribute="bottom" constant="-24" id="sgi-h2-AMz"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MDb-Gu-dZ4" secondAttribute="bottom" constant="80" id="tac-dg-pRh"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -103,12 +137,12 @@ Vinicius!</string>
                                     <constraint firstItem="VeT-Do-QOe" firstAttribute="width" secondItem="aE0-qO-Te0" secondAttribute="width" id="Ufg-kT-TYS"/>
                                     <constraint firstItem="VeT-Do-QOe" firstAttribute="leading" secondItem="aE0-qO-Te0" secondAttribute="leading" id="Wor-K9-KJv"/>
                                     <constraint firstAttribute="trailing" secondItem="VeT-Do-QOe" secondAttribute="trailing" id="hPQ-qm-2rc"/>
-                                    <constraint firstItem="VeT-Do-QOe" firstAttribute="height" secondItem="aE0-qO-Te0" secondAttribute="height" id="lJa-cA-JoV"/>
+                                    <constraint firstItem="VeT-Do-QOe" firstAttribute="height" secondItem="aE0-qO-Te0" secondAttribute="height" priority="250" id="lJa-cA-JoV"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="aE0-qO-Te0" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="69y-hj-jto"/>
                             <constraint firstItem="aE0-qO-Te0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UBp-vB-ta1"/>
@@ -116,10 +150,18 @@ Vinicius!</string>
                             <constraint firstAttribute="bottom" secondItem="aE0-qO-Te0" secondAttribute="bottom" id="hLn-HX-1Kr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="enterValuesManagerView" destination="JWZ-Jc-51S" id="REl-cn-faQ"/>
+                        <outlet property="exitValuesManager" destination="bNu-2R-h2G" id="GIW-OC-jHO"/>
+                        <outlet property="greetingLabel" destination="ICy-Ag-hiU" id="q0d-AK-Ky3"/>
+                        <outlet property="imageContentView" destination="vYv-TX-Vzu" id="dKg-AT-0AC"/>
+                        <outlet property="notificationView" destination="MDb-Gu-dZ4" id="6LY-vv-SeB"/>
+                        <outlet property="userImageView" destination="tCm-9u-yjW" id="M8q-0b-plW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+            <point key="canvasLocation" x="18.22429906542056" y="79.049676025917933"/>
         </scene>
     </scenes>
     <resources>
