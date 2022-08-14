@@ -49,11 +49,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		811A395128A93BC70022AF82 /* Controllers */ = {
+		811A395128A93BC70022AF82 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Controllers;
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		811A395228A93BDA0022AF82 /* Views */ = {
@@ -79,13 +79,6 @@
 			path = LoginCreateAccount;
 			sourceTree = "<group>";
 		};
-		812E324F28A98EA000A64934 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		D511A26428A1C129008D6E69 = {
 			isa = PBXGroup;
 			children = (
@@ -105,9 +98,8 @@
 		D511A26F28A1C12A008D6E69 /* SeguraeApp */ = {
 			isa = PBXGroup;
 			children = (
-				812E324F28A98EA000A64934 /* New Group */,
 				811A395E28A94F120022AF82 /* LoginCreateAccount */,
-				811A395128A93BC70022AF82 /* Controllers */,
+				811A395128A93BC70022AF82 /* Welcome */,
 				811A395228A93BDA0022AF82 /* Views */,
 				D511A27E28A1C12C008D6E69 /* Info.plist */,
 				D511A27928A1C12C008D6E69 /* Assets.xcassets */,
