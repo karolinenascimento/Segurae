@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811A396028A953B40022AF82 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A395F28A953B40022AF82 /* CreateAccountViewController.swift */; };
+		811A396228A953D80022AF82 /* EmailAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396128A953D80022AF82 /* EmailAccountViewController.swift */; };
+		811A396428A954170022AF82 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396328A954170022AF82 /* PasswordViewController.swift */; };
+		811A396628A954570022AF82 /* NameCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396528A954570022AF82 /* NameCreateViewController.swift */; };
 		D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511A27028A1C12A008D6E69 /* AppDelegate.swift */; };
 		D511A27328A1C12A008D6E69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511A27228A1C12A008D6E69 /* SceneDelegate.swift */; };
-		D511A27528A1C12A008D6E69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511A27428A1C12A008D6E69 /* ViewController.swift */; };
 		D511A27828A1C12A008D6E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511A27628A1C12A008D6E69 /* Main.storyboard */; };
 		D511A27A28A1C12C008D6E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D511A27928A1C12C008D6E69 /* Assets.xcassets */; };
 		D511A27D28A1C12C008D6E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511A27B28A1C12C008D6E69 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		811A395F28A953B40022AF82 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		811A396128A953D80022AF82 /* EmailAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAccountViewController.swift; sourceTree = "<group>"; };
+		811A396328A954170022AF82 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		811A396528A954570022AF82 /* NameCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCreateViewController.swift; sourceTree = "<group>"; };
 		D511A26D28A1C12A008D6E69 /* SeguraeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeguraeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D511A27028A1C12A008D6E69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D511A27228A1C12A008D6E69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D511A27428A1C12A008D6E69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D511A27728A1C12A008D6E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D511A27928A1C12C008D6E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D511A27C28A1C12C008D6E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		811A395128A93BC70022AF82 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		811A395228A93BDA0022AF82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D511A27B28A1C12C008D6E69 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		811A395E28A94F120022AF82 /* LoginCreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				D511A27628A1C12A008D6E69 /* Main.storyboard */,
+				811A396528A954570022AF82 /* NameCreateViewController.swift */,
+				811A396328A954170022AF82 /* PasswordViewController.swift */,
+				811A396128A953D80022AF82 /* EmailAccountViewController.swift */,
+				811A395F28A953B40022AF82 /* CreateAccountViewController.swift */,
+			);
+			path = LoginCreateAccount;
+			sourceTree = "<group>";
+		};
 		D511A26428A1C129008D6E69 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +89,13 @@
 		D511A26F28A1C12A008D6E69 /* SeguraeApp */ = {
 			isa = PBXGroup;
 			children = (
-				D511A27028A1C12A008D6E69 /* AppDelegate.swift */,
-				D511A27228A1C12A008D6E69 /* SceneDelegate.swift */,
-				D511A27428A1C12A008D6E69 /* ViewController.swift */,
-				D511A27628A1C12A008D6E69 /* Main.storyboard */,
-				D511A27928A1C12C008D6E69 /* Assets.xcassets */,
-				D511A27B28A1C12C008D6E69 /* LaunchScreen.storyboard */,
+				811A395E28A94F120022AF82 /* LoginCreateAccount */,
+				811A395128A93BC70022AF82 /* Controllers */,
+				811A395228A93BDA0022AF82 /* Views */,
 				D511A27E28A1C12C008D6E69 /* Info.plist */,
+				D511A27928A1C12C008D6E69 /* Assets.xcassets */,
+				D511A27228A1C12A008D6E69 /* SceneDelegate.swift */,
+				D511A27028A1C12A008D6E69 /* AppDelegate.swift */,
 			);
 			path = SeguraeApp;
 			sourceTree = "<group>";
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D511A27528A1C12A008D6E69 /* ViewController.swift in Sources */,
+				811A396028A953B40022AF82 /* CreateAccountViewController.swift in Sources */,
+				811A396628A954570022AF82 /* NameCreateViewController.swift in Sources */,
+				811A396428A954170022AF82 /* PasswordViewController.swift in Sources */,
 				D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */,
+				811A396228A953D80022AF82 /* EmailAccountViewController.swift in Sources */,
 				D511A27328A1C12A008D6E69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
