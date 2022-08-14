@@ -11,6 +11,9 @@
 		811A396228A953D80022AF82 /* EmailAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396128A953D80022AF82 /* EmailAccountViewController.swift */; };
 		811A396428A954170022AF82 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396328A954170022AF82 /* PasswordViewController.swift */; };
 		811A396628A954570022AF82 /* NameCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396528A954570022AF82 /* NameCreateViewController.swift */; };
+		812E325128A98F1A00A64934 /* doLoginEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */; };
+		812E325328A98F2F00A64934 /* doLoginPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */; };
+		812E325528A98F7200A64934 /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */; };
 		D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511A27028A1C12A008D6E69 /* AppDelegate.swift */; };
 		D511A27328A1C12A008D6E69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511A27228A1C12A008D6E69 /* SceneDelegate.swift */; };
 		D511A27828A1C12A008D6E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511A27628A1C12A008D6E69 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		811A396128A953D80022AF82 /* EmailAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAccountViewController.swift; sourceTree = "<group>"; };
 		811A396328A954170022AF82 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		811A396528A954570022AF82 /* NameCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCreateViewController.swift; sourceTree = "<group>"; };
+		812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doLoginEmailViewController.swift; sourceTree = "<group>"; };
+		812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doLoginPasswordViewController.swift; sourceTree = "<group>"; };
+		812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
 		D511A26D28A1C12A008D6E69 /* SeguraeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeguraeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D511A27028A1C12A008D6E69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D511A27228A1C12A008D6E69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,8 +72,18 @@
 				811A396328A954170022AF82 /* PasswordViewController.swift */,
 				811A396128A953D80022AF82 /* EmailAccountViewController.swift */,
 				811A395F28A953B40022AF82 /* CreateAccountViewController.swift */,
+				812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */,
+				812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */,
+				812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */,
 			);
 			path = LoginCreateAccount;
+			sourceTree = "<group>";
+		};
+		812E324F28A98EA000A64934 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		D511A26428A1C129008D6E69 = {
@@ -89,6 +105,7 @@
 		D511A26F28A1C12A008D6E69 /* SeguraeApp */ = {
 			isa = PBXGroup;
 			children = (
+				812E324F28A98EA000A64934 /* New Group */,
 				811A395E28A94F120022AF82 /* LoginCreateAccount */,
 				811A395128A93BC70022AF82 /* Controllers */,
 				811A395228A93BDA0022AF82 /* Views */,
@@ -173,9 +190,12 @@
 			files = (
 				811A396028A953B40022AF82 /* CreateAccountViewController.swift in Sources */,
 				811A396628A954570022AF82 /* NameCreateViewController.swift in Sources */,
+				812E325528A98F7200A64934 /* PasswordRecoverViewController.swift in Sources */,
 				811A396428A954170022AF82 /* PasswordViewController.swift in Sources */,
 				D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */,
+				812E325328A98F2F00A64934 /* doLoginPasswordViewController.swift in Sources */,
 				811A396228A953D80022AF82 /* EmailAccountViewController.swift in Sources */,
+				812E325128A98F1A00A64934 /* doLoginEmailViewController.swift in Sources */,
 				D511A27328A1C12A008D6E69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
