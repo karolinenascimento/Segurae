@@ -7,24 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811A396028A953B40022AF82 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A395F28A953B40022AF82 /* CreateAccountViewController.swift */; };
+		811A396228A953D80022AF82 /* EmailAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396128A953D80022AF82 /* EmailAccountViewController.swift */; };
+		811A396428A954170022AF82 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396328A954170022AF82 /* PasswordViewController.swift */; };
+		811A396628A954570022AF82 /* NameCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396528A954570022AF82 /* NameCreateViewController.swift */; };
+		812E325128A98F1A00A64934 /* doLoginEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */; };
+		812E325328A98F2F00A64934 /* doLoginPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */; };
+		812E325528A98F7200A64934 /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */; };
 		D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511A27028A1C12A008D6E69 /* AppDelegate.swift */; };
 		D511A27328A1C12A008D6E69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511A27228A1C12A008D6E69 /* SceneDelegate.swift */; };
-		D511A27528A1C12A008D6E69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511A27428A1C12A008D6E69 /* ViewController.swift */; };
-		D511A27828A1C12A008D6E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511A27628A1C12A008D6E69 /* Main.storyboard */; };
+		D511A27828A1C12A008D6E69 /* LoginCreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511A27628A1C12A008D6E69 /* LoginCreateAccount.storyboard */; };
 		D511A27A28A1C12C008D6E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D511A27928A1C12C008D6E69 /* Assets.xcassets */; };
 		D511A27D28A1C12C008D6E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511A27B28A1C12C008D6E69 /* LaunchScreen.storyboard */; };
 		D592293628A479BA001A3762 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592293528A479BA001A3762 /* HomeViewController.swift */; };
 		D592293828A479DB001A3762 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D592293728A479DB001A3762 /* Home.storyboard */; };
 		D592293A28A482BA001A3762 /* ValuesManagerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D592293928A482BA001A3762 /* ValuesManagerView.xib */; };
 		D592293C28A482CC001A3762 /* ValuesManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592293B28A482CC001A3762 /* ValuesManagerView.swift */; };
+		D571C4DB28AC55140069F59B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D571C4DA28AC55140069F59B /* Main.storyboard */; };
+		D571C4E628AC55BA0069F59B /* Tutorial4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D571C4E128AC55BA0069F59B /* Tutorial4ViewController.swift */; };
+		D571C4E728AC55BA0069F59B /* Tutorial3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D571C4E228AC55BA0069F59B /* Tutorial3ViewController.swift */; };
+		D571C4E828AC55BA0069F59B /* Tutorial2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D571C4E328AC55BA0069F59B /* Tutorial2ViewController.swift */; };
+		D571C4E928AC55BA0069F59B /* Tutorial1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D571C4E428AC55BA0069F59B /* Tutorial1ViewController.swift */; };
+		D571C4EA28AC55BA0069F59B /* WelcomeTutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D571C4E528AC55BA0069F59B /* WelcomeTutorial.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		811A395F28A953B40022AF82 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		811A396128A953D80022AF82 /* EmailAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAccountViewController.swift; sourceTree = "<group>"; };
+		811A396328A954170022AF82 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		811A396528A954570022AF82 /* NameCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCreateViewController.swift; sourceTree = "<group>"; };
+		812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doLoginEmailViewController.swift; sourceTree = "<group>"; };
+		812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doLoginPasswordViewController.swift; sourceTree = "<group>"; };
+		812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
 		D511A26D28A1C12A008D6E69 /* SeguraeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeguraeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D511A27028A1C12A008D6E69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D511A27228A1C12A008D6E69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D511A27428A1C12A008D6E69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D511A27728A1C12A008D6E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D511A27728A1C12A008D6E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginCreateAccount.storyboard; sourceTree = "<group>"; };
 		D511A27928A1C12C008D6E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D511A27C28A1C12C008D6E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D511A27E28A1C12C008D6E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +50,12 @@
 		D592293728A479DB001A3762 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D592293928A482BA001A3762 /* ValuesManagerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValuesManagerView.xib; sourceTree = "<group>"; };
 		D592293B28A482CC001A3762 /* ValuesManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuesManagerView.swift; sourceTree = "<group>"; };
+		D571C4DA28AC55140069F59B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D571C4E128AC55BA0069F59B /* Tutorial4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial4ViewController.swift; sourceTree = "<group>"; };
+		D571C4E228AC55BA0069F59B /* Tutorial3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial3ViewController.swift; sourceTree = "<group>"; };
+		D571C4E328AC55BA0069F59B /* Tutorial2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial2ViewController.swift; sourceTree = "<group>"; };
+		D571C4E428AC55BA0069F59B /* Tutorial1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial1ViewController.swift; sourceTree = "<group>"; };
+		D571C4E528AC55BA0069F59B /* WelcomeTutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeTutorial.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +69,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		811A395228A93BDA0022AF82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D511A27B28A1C12C008D6E69 /* LaunchScreen.storyboard */,
+				D571C4DA28AC55140069F59B /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		811A395E28A94F120022AF82 /* LoginCreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				D511A27628A1C12A008D6E69 /* LoginCreateAccount.storyboard */,
+				811A396528A954570022AF82 /* NameCreateViewController.swift */,
+				811A396328A954170022AF82 /* PasswordViewController.swift */,
+				811A396128A953D80022AF82 /* EmailAccountViewController.swift */,
+				811A395F28A953B40022AF82 /* CreateAccountViewController.swift */,
+				812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */,
+				812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */,
+				812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */,
+			);
+			path = LoginCreateAccount;
+			sourceTree = "<group>";
+		};
 		D511A26428A1C129008D6E69 = {
 			isa = PBXGroup;
 			children = (
@@ -65,13 +113,13 @@
 			isa = PBXGroup;
 			children = (
 				D592293428A47972001A3762 /* Home */,
-				D511A27028A1C12A008D6E69 /* AppDelegate.swift */,
-				D511A27228A1C12A008D6E69 /* SceneDelegate.swift */,
-				D511A27428A1C12A008D6E69 /* ViewController.swift */,
-				D511A27628A1C12A008D6E69 /* Main.storyboard */,
-				D511A27928A1C12C008D6E69 /* Assets.xcassets */,
-				D511A27B28A1C12C008D6E69 /* LaunchScreen.storyboard */,
+				D571C4E028AC559F0069F59B /* WelcomeTutorial */,
+				811A395E28A94F120022AF82 /* LoginCreateAccount */,
+				811A395228A93BDA0022AF82 /* Views */,
 				D511A27E28A1C12C008D6E69 /* Info.plist */,
+				D511A27928A1C12C008D6E69 /* Assets.xcassets */,
+				D511A27228A1C12A008D6E69 /* SceneDelegate.swift */,
+				D511A27028A1C12A008D6E69 /* AppDelegate.swift */,
 			);
 			path = SeguraeApp;
 			sourceTree = "<group>";
@@ -85,6 +133,18 @@
 				D592293B28A482CC001A3762 /* ValuesManagerView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		D571C4E028AC559F0069F59B /* WelcomeTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				D571C4E428AC55BA0069F59B /* Tutorial1ViewController.swift */,
+				D571C4E328AC55BA0069F59B /* Tutorial2ViewController.swift */,
+				D571C4E228AC55BA0069F59B /* Tutorial3ViewController.swift */,
+				D571C4E128AC55BA0069F59B /* Tutorial4ViewController.swift */,
+				D571C4E528AC55BA0069F59B /* WelcomeTutorial.storyboard */,
+			);
+			path = WelcomeTutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +208,10 @@
 				D592293A28A482BA001A3762 /* ValuesManagerView.xib in Resources */,
 				D511A27D28A1C12C008D6E69 /* LaunchScreen.storyboard in Resources */,
 				D511A27A28A1C12C008D6E69 /* Assets.xcassets in Resources */,
-				D511A27828A1C12A008D6E69 /* Main.storyboard in Resources */,
 				D592293828A479DB001A3762 /* Home.storyboard in Resources */,
+				D511A27828A1C12A008D6E69 /* LoginCreateAccount.storyboard in Resources */,
+				D571C4DB28AC55140069F59B /* Main.storyboard in Resources */,
+				D571C4EA28AC55BA0069F59B /* WelcomeTutorial.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +222,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D511A27528A1C12A008D6E69 /* ViewController.swift in Sources */,
+				811A396028A953B40022AF82 /* CreateAccountViewController.swift in Sources */,
+				D571C4E928AC55BA0069F59B /* Tutorial1ViewController.swift in Sources */,
+				D571C4E828AC55BA0069F59B /* Tutorial2ViewController.swift in Sources */,
+				811A396628A954570022AF82 /* NameCreateViewController.swift in Sources */,
+				812E325528A98F7200A64934 /* PasswordRecoverViewController.swift in Sources */,
+				811A396428A954170022AF82 /* PasswordViewController.swift in Sources */,
 				D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */,
+				812E325328A98F2F00A64934 /* doLoginPasswordViewController.swift in Sources */,
+				811A396228A953D80022AF82 /* EmailAccountViewController.swift in Sources */,
+				D571C4E628AC55BA0069F59B /* Tutorial4ViewController.swift in Sources */,
+				D571C4E728AC55BA0069F59B /* Tutorial3ViewController.swift in Sources */,
+				812E325128A98F1A00A64934 /* doLoginEmailViewController.swift in Sources */,
 				D511A27328A1C12A008D6E69 /* SceneDelegate.swift in Sources */,
 				D592293628A479BA001A3762 /* HomeViewController.swift in Sources */,
 				D592293C28A482CC001A3762 /* ValuesManagerView.swift in Sources */,
@@ -171,12 +243,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D511A27628A1C12A008D6E69 /* Main.storyboard */ = {
+		D511A27628A1C12A008D6E69 /* LoginCreateAccount.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D511A27728A1C12A008D6E69 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LoginCreateAccount.storyboard;
 			sourceTree = "<group>";
 		};
 		D511A27B28A1C12C008D6E69 /* LaunchScreen.storyboard */ = {
