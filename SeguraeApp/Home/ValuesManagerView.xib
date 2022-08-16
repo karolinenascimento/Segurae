@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValuesManagerView" customModule="SeguraeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="managerButton" destination="oPO-aP-d38" id="nNu-G0-CWd"/>
+                <outlet property="titleLabel" destination="81J-zY-azz" id="RGK-FQ-0LB"/>
+                <outlet property="valueLabel" destination="H9W-pe-RIj" id="2hp-Bm-gx3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oCU-cp-mn2">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor de entrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81J-zY-azz">
+                    <rect key="frame" x="44" y="33" width="132" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9W-pe-RIj">
+                    <rect key="frame" x="44" y="59" width="72" height="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPO-aP-d38">
+                    <rect key="frame" x="48" y="162" width="287" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="xKN-84-aH0"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Gerenciar entradas">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" red="0.0078431372549019607" green="0.87450980392156863" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="managerAction:" destination="-1" eventType="touchUpInside" id="T25-8B-De3"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-2g-1fe">
+                    <rect key="frame" x="24" y="24" width="4" height="65"/>
+                    <color key="backgroundColor" red="0.34901960784313724" green="0.90980392156862744" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="ZYh-8i-wjb"/>
+                        <constraint firstAttribute="height" constant="65" id="vwH-jQ-bzj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BiI-KG-0Yy">
+                    <rect key="frame" x="24" y="104" width="335" height="4"/>
+                    <color key="backgroundColor" red="0.34901960784313724" green="0.90980392156862744" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="nLy-1G-IjL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="DJE-sA-nbS"/>
+            <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cpq-2g-1fe" firstAttribute="leading" secondItem="DJE-sA-nbS" secondAttribute="leading" constant="24" id="0vA-hY-CkO"/>
+                <constraint firstItem="H9W-pe-RIj" firstAttribute="bottom" secondItem="cpq-2g-1fe" secondAttribute="bottom" constant="-8" id="8Lm-1i-bzh"/>
+                <constraint firstItem="H9W-pe-RIj" firstAttribute="leading" secondItem="cpq-2g-1fe" secondAttribute="trailing" constant="16" id="9Pd-C4-0Bw"/>
+                <constraint firstItem="DJE-sA-nbS" firstAttribute="bottom" secondItem="oPO-aP-d38" secondAttribute="bottom" constant="24" id="BFR-xt-dOR"/>
+                <constraint firstItem="BiI-KG-0Yy" firstAttribute="leading" secondItem="DJE-sA-nbS" secondAttribute="leading" constant="24" id="Cil-rt-Sqk"/>
+                <constraint firstItem="DJE-sA-nbS" firstAttribute="trailing" secondItem="oPO-aP-d38" secondAttribute="trailing" constant="48" id="LxV-mt-VN4"/>
+                <constraint firstItem="DJE-sA-nbS" firstAttribute="trailing" secondItem="BiI-KG-0Yy" secondAttribute="trailing" constant="24" id="M23-dV-SjQ"/>
+                <constraint firstItem="oPO-aP-d38" firstAttribute="leading" secondItem="DJE-sA-nbS" secondAttribute="leading" constant="48" id="OPJ-qJ-iVg"/>
+                <constraint firstItem="81J-zY-azz" firstAttribute="top" secondItem="cpq-2g-1fe" secondAttribute="top" constant="9" id="S6k-5m-Iiv"/>
+                <constraint firstItem="BiI-KG-0Yy" firstAttribute="top" secondItem="cpq-2g-1fe" secondAttribute="bottom" constant="15" id="Sjv-DQ-Ak1"/>
+                <constraint firstItem="cpq-2g-1fe" firstAttribute="top" secondItem="oCU-cp-mn2" secondAttribute="top" constant="24" id="bmG-40-atn"/>
+                <constraint firstItem="81J-zY-azz" firstAttribute="leading" secondItem="cpq-2g-1fe" secondAttribute="trailing" constant="16" id="nli-kh-Iu2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="267.39130434782612" y="270.53571428571428"/>
+        </view>
+    </objects>
+</document>
