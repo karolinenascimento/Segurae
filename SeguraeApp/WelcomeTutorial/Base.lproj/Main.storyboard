@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial1" translatesAutoresizingMaskIntoConstraints="NO" id="tgY-qP-xd4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial1" translatesAutoresizingMaskIntoConstraints="NO" id="tgY-qP-xd4">
                                 <rect key="frame" x="67" y="44" width="241" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="sXG-Nh-eu2"/>
@@ -24,21 +24,21 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tão simples quanto 2+2" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PFu-Ge-bcC">
                                 <rect key="frame" x="67" y="365" width="241" height="60"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Nal-fL-s3C"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="A ferramenta perfeita para quem quer segurar e organizar as finanças com simplicidade." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xgO-WG-T0Y">
                                 <rect key="frame" x="67" y="459" width="241" height="89"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89" id="h5F-YL-DNr"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -47,15 +47,18 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="tZS-YM-RPI"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Próximo"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Próximo">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="xcf-do-Vw1" kind="show" id="HCh-Ag-Vf6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9pa-pn-jHJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8kg-Cz-KSn" firstAttribute="leading" secondItem="9pa-pn-jHJ" secondAttribute="leading" constant="89" id="8BR-cX-Ih7"/>
                             <constraint firstItem="tgY-qP-xd4" firstAttribute="top" secondItem="9pa-pn-jHJ" secondAttribute="top" id="BSD-a8-h4u"/>
@@ -72,6 +75,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rih-9b-r6l"/>
+                    <connections>
+                        <outlet property="tutorial1ImageView" destination="tgY-qP-xd4" id="dKI-Ku-KiN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eke-do-yIj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,11 +107,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89" id="hdw-S7-Ddq"/>
                                 </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="z87-RF-wSK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="z87-RF-wSK">
                                 <rect key="frame" x="67" y="44" width="241" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="jkd-97-Iyi"/>
@@ -144,6 +150,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DvZ-fI-Os1"/>
+                    <connections>
+                        <outlet property="tutorial2ImageView" destination="z87-RF-wSK" id="oUL-IS-dUT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiK-rq-dRO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,11 +196,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89" id="azV-Cv-5Re"/>
                                 </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial3" translatesAutoresizingMaskIntoConstraints="NO" id="IqZ-v8-KYG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial3" translatesAutoresizingMaskIntoConstraints="NO" id="IqZ-v8-KYG">
                                 <rect key="frame" x="67" y="44" width="241" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="wIh-5J-foQ"/>
@@ -216,6 +225,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OY4-AE-Zi7"/>
+                    <connections>
+                        <outlet property="tutorial3ImageView" destination="IqZ-v8-KYG" id="oxU-jY-XBT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIn-i9-fjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,11 +257,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89" id="GrJ-91-qpb"/>
                                 </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial4" translatesAutoresizingMaskIntoConstraints="NO" id="hB6-ZS-xe5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial4" translatesAutoresizingMaskIntoConstraints="NO" id="hB6-ZS-xe5">
                                 <rect key="frame" x="67" y="44" width="241" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="905-kW-PXK"/>
@@ -285,6 +297,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BbJ-g2-k4F"/>
+                    <connections>
+                        <outlet property="tutorial4ImageView" destination="hB6-ZS-xe5" id="Cty-yw-emb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6J-ip-u2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -317,7 +332,10 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">

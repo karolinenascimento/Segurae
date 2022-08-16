@@ -8,22 +8,20 @@
 import UIKit
 
 class Tutorial2ViewController: UIViewController {
-
+    @IBOutlet weak var tutorial2ImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureImageView()
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configureImageView() {
+        tutorial2ImageView.layer.cornerRadius = 10
+        tutorial2ImageView.layer.borderWidth = 2.0
+        tutorial2ImageView.layer.borderColor = UIColor.green.cgColor
+        
     }
-    */
 
 }
