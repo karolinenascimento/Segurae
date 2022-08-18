@@ -15,7 +15,7 @@ class ExitFinancialValueViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Gerenciar saídas"
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -47,5 +47,9 @@ extension ExitFinancialValueViewController: UITableViewDataSource {
 }
 
 extension ExitFinancialValueViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "FinancialManager", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ExitValueIdentifier")
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }

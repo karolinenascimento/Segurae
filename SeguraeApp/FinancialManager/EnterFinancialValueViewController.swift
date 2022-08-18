@@ -16,7 +16,7 @@ class EnterFinancialValueViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        title = "Gerenciar entradas"
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "InputValueTableViewCell", bundle: nil), forCellReuseIdentifier: "InputValueTableViewCell")
@@ -42,10 +42,12 @@ extension EnterFinancialValueViewController: UITableViewDataSource {
         
         return UITableViewCell()
     }
-    
-    
 }
 
 extension EnterFinancialValueViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "FinancialManager", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "EntryValueIdentifier")
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }

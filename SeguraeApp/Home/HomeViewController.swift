@@ -19,13 +19,10 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var greetingLabel: UILabel!
     
-    @IBOutlet weak var notificationView: UIView!
-    
    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        notificationView.layer.cornerRadius = 10.0
         imageContentView.layer.cornerRadius = 46.5
         userImageView.layer.cornerRadius = 42.5
         userImageView.layer.borderWidth = 3.0
@@ -42,10 +39,31 @@ class HomeViewController: UIViewController {
         exitValuesManager.managerButton.setTitle("Gerenciar saídas", for: .normal)
         exitValuesManager.layer.cornerRadius = 10.0
         exitValuesManager.clipsToBounds = true
+        
+        enterValuesManagerView.tag = 1
+        exitValuesManager.tag = 2
+        
+        enterValuesManagerView.delegate = self
+        exitValuesManager.delegate = self
     }
     
 
     @IBAction func configAction(_ sender: UIButton) {
+    }
+    
+}
+
+extension HomeViewController: ValuesManagerViewDelegate {
+    func didTapButton(view: ValuesManagerView) {
+        let storyboard = UIStoryboard(name: "FinancialManager", bundle: nil)
+        
+        if view.tag == 1 {
+            let viewController = storyboard.instantiateViewController(withIdentifier: "EnterFinancialValueIdentifier")
+            navigationController?.pushViewController(viewController, animated: true)
+        } else if view.tag == 2 {
+            let viewController = storyboard.instantiateViewController(withIdentifier: "ExitFinancialValueIdentifier")
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
     
 }

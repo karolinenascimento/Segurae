@@ -12,7 +12,7 @@ class OthersOptionsTableViewCell: UITableViewCell {
     @IBOutlet weak var othersOptionsLabel: UILabel!
     @IBOutlet weak var othersOpitionsButton: UIButton!
     
-    static let identifier = "OtherOptionsTableViewCell"
+    static let identifier = "OthersOptionsTableViewCell"
     static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
     }

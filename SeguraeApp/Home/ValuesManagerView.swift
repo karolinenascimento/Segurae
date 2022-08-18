@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol ValuesManagerViewDelegate {
+    func didTapButton( view: ValuesManagerView)
+    
+}
+
 class ValuesManagerView: UIView {
     
     
@@ -15,6 +20,9 @@ class ValuesManagerView: UIView {
     @IBOutlet weak var valueLabel: UILabel!
     
     @IBOutlet weak var managerButton: UIButton!
+    
+    
+    var delegate: ValuesManagerViewDelegate?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -29,6 +37,7 @@ class ValuesManagerView: UIView {
     }
     
     @IBAction func managerAction(_ sender: UIButton) {
+        delegate?.didTapButton(view: self)
     }
     
 }
