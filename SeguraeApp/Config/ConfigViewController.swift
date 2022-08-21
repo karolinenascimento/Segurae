@@ -12,7 +12,6 @@ class ConfigViewController: UIViewController {
     // MARK: - METRICS
     
     // MARK: - PROPERTIES
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var photoProfileImage: UIImageView!
     @IBOutlet weak var nameProfileLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -28,6 +27,7 @@ class ConfigViewController: UIViewController {
         configureProfile()
         configureTableView()
         setGeneralData()
+        navigationController?.navigationBar.tintColor = UIColor.white
     }
     
     // MARK: - PRIVATE METHODS
@@ -71,6 +71,16 @@ extension ConfigViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 && indexPath.row == 2 {
+                performSegue(withIdentifier: "currentPasswordSegue", sender: nil)
+        } else if indexPath.section == 1 && indexPath.row == 0 {
+            performSegue(withIdentifier: "createPasswordSegue", sender: nil)
+        } else if indexPath.section == 2 && indexPath.row == 0 {
+            performSegue(withIdentifier: "deleteAllSegue", sender: nil)
+        }
+    }
+    
 }
 
 extension ConfigViewController: UITableViewDataSource {

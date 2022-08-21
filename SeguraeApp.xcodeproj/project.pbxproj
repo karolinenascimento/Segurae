@@ -25,6 +25,12 @@
 		9AAD8E8628AB51CD00385A3C /* OthersOptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAD8E8428AB51CD00385A3C /* OthersOptionsTableViewCell.xib */; };
 		9AAD8E8C28AB54A600385A3C /* ExitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAD8E8A28AB54A600385A3C /* ExitTableViewCell.swift */; };
 		9AAD8E8D28AB54A600385A3C /* ExitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAD8E8B28AB54A600385A3C /* ExitTableViewCell.xib */; };
+		9AE5F15228B1C110004382F2 /* CurrentPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5F15128B1C110004382F2 /* CurrentPasswordViewController.swift */; };
+		9AE5F15628B1C7D2004382F2 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5F15528B1C7D2004382F2 /* NewPasswordViewController.swift */; };
+		9AE5F15A28B1CA3A004382F2 /* ConfirmNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5F15928B1CA3A004382F2 /* ConfirmNewPasswordViewController.swift */; };
+		9AE5F15F28B1CE12004382F2 /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5F15E28B1CE12004382F2 /* CreatePasswordViewController.swift */; };
+		9AE5F16228B1CECA004382F2 /* ConfirmPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5F16128B1CECA004382F2 /* ConfirmPasswordViewController.swift */; };
+		9AE5F16728B1D342004382F2 /* DeleteAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5F16628B1D342004382F2 /* DeleteAllViewController.swift */; };
 		D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511A27028A1C12A008D6E69 /* AppDelegate.swift */; };
 		D511A27328A1C12A008D6E69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511A27228A1C12A008D6E69 /* SceneDelegate.swift */; };
 		D511A27828A1C12A008D6E69 /* LoginCreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D511A27628A1C12A008D6E69 /* LoginCreateAccount.storyboard */; };
@@ -72,6 +78,12 @@
 		9AAD8E8428AB51CD00385A3C /* OthersOptionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OthersOptionsTableViewCell.xib; sourceTree = "<group>"; };
 		9AAD8E8A28AB54A600385A3C /* ExitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitTableViewCell.swift; sourceTree = "<group>"; };
 		9AAD8E8B28AB54A600385A3C /* ExitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExitTableViewCell.xib; sourceTree = "<group>"; };
+		9AE5F15128B1C110004382F2 /* CurrentPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPasswordViewController.swift; sourceTree = "<group>"; };
+		9AE5F15528B1C7D2004382F2 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		9AE5F15928B1CA3A004382F2 /* ConfirmNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmNewPasswordViewController.swift; sourceTree = "<group>"; };
+		9AE5F15E28B1CE12004382F2 /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
+		9AE5F16128B1CECA004382F2 /* ConfirmPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPasswordViewController.swift; sourceTree = "<group>"; };
+		9AE5F16628B1D342004382F2 /* DeleteAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeleteAllViewController.swift; path = SeguraeApp/Config/DeleteAllViewController.swift; sourceTree = SOURCE_ROOT; };
 		D511A26D28A1C12A008D6E69 /* SeguraeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeguraeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D511A27028A1C12A008D6E69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D511A27228A1C12A008D6E69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,16 +155,54 @@
 				9A5F344D28A5BD9600EFA032 /* Config.storyboard */,
 				9A7F1CCA28A7246100CD6FB9 /* ConfigViewController.swift */,
 				9AAD8E7428AB4BDF00385A3C /* GeneralModel.swift */,
+				9AE5F14B28B1BE8E004382F2 /* Profile */,
+				9AE5F14C28B1BE9C004382F2 /* Security */,
+				9AE5F14D28B1BEA9004382F2 /* OthersOptions */,
+				9AE5F14F28B1BEB9004382F2 /* Exit */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		9AE5F14B28B1BE8E004382F2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
 				9AAD8E7828AB4C4A00385A3C /* ProfileTableViewCell.swift */,
 				9AAD8E7928AB4C4A00385A3C /* ProfileTableViewCell.xib */,
+				9AE5F15128B1C110004382F2 /* CurrentPasswordViewController.swift */,
+				9AE5F15528B1C7D2004382F2 /* NewPasswordViewController.swift */,
+				9AE5F15928B1CA3A004382F2 /* ConfirmNewPasswordViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9AE5F14C28B1BE9C004382F2 /* Security */ = {
+			isa = PBXGroup;
+			children = (
 				9AAD8E7D28AB4F9F00385A3C /* SecurityTableViewCell.swift */,
 				9AAD8E7E28AB4F9F00385A3C /* SecurityTableViewCell.xib */,
+				9AE5F15E28B1CE12004382F2 /* CreatePasswordViewController.swift */,
+				9AE5F16128B1CECA004382F2 /* ConfirmPasswordViewController.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		9AE5F14D28B1BEA9004382F2 /* OthersOptions */ = {
+			isa = PBXGroup;
+			children = (
 				9AAD8E8328AB51CD00385A3C /* OthersOptionsTableViewCell.swift */,
 				9AAD8E8428AB51CD00385A3C /* OthersOptionsTableViewCell.xib */,
+				9AE5F16628B1D342004382F2 /* DeleteAllViewController.swift */,
+			);
+			path = OthersOptions;
+			sourceTree = "<group>";
+		};
+		9AE5F14F28B1BEB9004382F2 /* Exit */ = {
+			isa = PBXGroup;
+			children = (
 				9AAD8E8A28AB54A600385A3C /* ExitTableViewCell.swift */,
 				9AAD8E8B28AB54A600385A3C /* ExitTableViewCell.xib */,
 			);
-			path = Config;
+			path = Exit;
 			sourceTree = "<group>";
 		};
 		D511A26428A1C129008D6E69 = {
@@ -316,19 +366,25 @@
 				9AAD8E7528AB4BDF00385A3C /* GeneralModel.swift in Sources */,
 				9AAD8E7F28AB4F9F00385A3C /* SecurityTableViewCell.swift in Sources */,
 				9AAD8E8C28AB54A600385A3C /* ExitTableViewCell.swift in Sources */,
+				9AE5F15228B1C110004382F2 /* CurrentPasswordViewController.swift in Sources */,
 				D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */,
 				9AAD8E7A28AB4C4A00385A3C /* ProfileTableViewCell.swift in Sources */,
 				9A7F1CCB28A7246100CD6FB9 /* ConfigViewController.swift in Sources */,
 				9AAD8E8528AB51CD00385A3C /* OthersOptionsTableViewCell.swift in Sources */,
 				811A396028A953B40022AF82 /* CreateAccountViewController.swift in Sources */,
 				D571C4E928AC55BA0069F59B /* Tutorial1ViewController.swift in Sources */,
+				9AE5F16728B1D342004382F2 /* DeleteAllViewController.swift in Sources */,
+				9AE5F16228B1CECA004382F2 /* ConfirmPasswordViewController.swift in Sources */,
 				D571C4E828AC55BA0069F59B /* Tutorial2ViewController.swift in Sources */,
 				811A396628A954570022AF82 /* NameCreateViewController.swift in Sources */,
+				9AE5F15628B1C7D2004382F2 /* NewPasswordViewController.swift in Sources */,
 				812E325528A98F7200A64934 /* PasswordRecoverViewController.swift in Sources */,
+				9AE5F15A28B1CA3A004382F2 /* ConfirmNewPasswordViewController.swift in Sources */,
 				811A396428A954170022AF82 /* PasswordViewController.swift in Sources */,
 				D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */,
 				D530DF8B28A708B200AE6967 /* ExitValueViewController.swift in Sources */,
 				812E325328A98F2F00A64934 /* doLoginPasswordViewController.swift in Sources */,
+				9AE5F15F28B1CE12004382F2 /* CreatePasswordViewController.swift in Sources */,
 				811A396228A953D80022AF82 /* EmailAccountViewController.swift in Sources */,
 				D571C4E628AC55BA0069F59B /* Tutorial4ViewController.swift in Sources */,
 				D571C4E728AC55BA0069F59B /* Tutorial3ViewController.swift in Sources */,
@@ -495,6 +551,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,6 +579,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
