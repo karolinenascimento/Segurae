@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="syW-Bd-bZl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LXA-3x-ix9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sfe-tM-ZYQ" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="210"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="210"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OoV-gn-yv4">
                                         <rect key="frame" x="153.5" y="30" width="107" height="107"/>
@@ -42,7 +42,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8R1-ac-u31">
-                                <rect key="frame" x="0.0" y="298" width="414" height="564"/>
+                                <rect key="frame" x="0.0" y="254" width="414" height="608"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -77,33 +77,43 @@
             <objects>
                 <viewController id="bO1-oh-zjd" customClass="CurrentPasswordViewController" customModule="SeguraeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x5k-ds-1WD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-segurae" translatesAutoresizingMaskIntoConstraints="NO" id="zCN-dm-RPQ">
-                                <rect key="frame" x="132" y="148" width="150" height="150"/>
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="awi-8Q-jas"/>
                                     <constraint firstAttribute="height" constant="150" id="fPA-wH-hsj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite sua senha atual" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mi-JI-ckU">
-                                <rect key="frame" x="0.0" y="331" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="287" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="******" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yvi-mh-JKB">
-                                <rect key="frame" x="38" y="422" width="338" height="45.5"/>
+                                <rect key="frame" x="38" y="378" width="338" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8w-Kg-mv3">
-                                <rect key="frame" x="38" y="542.5" width="338" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <rect key="frame" x="38" y="498.5" width="338" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="LxL-zv-Ayu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Próximo">
-                                    <color key="titleColor" red="0.36632704729999999" green="0.90240234139999997" blue="0.57443255189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <buttonConfiguration key="configuration" style="plain" title="Próximo">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.90980392160000001" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="JgQ-1w-40J" kind="show" id="gZu-fj-AIO"/>
                                 </connections>
@@ -131,63 +141,48 @@
             </objects>
             <point key="canvasLocation" x="1626" y="-133"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="wPF-aS-33v">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="syW-Bd-bZl" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="cMO-PZ-lnx">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="LXA-3x-ix9" kind="relationship" relationship="rootViewController" id="7QF-oM-EoT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zsI-fF-pvf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-97.101449275362327" y="-133.25892857142856"/>
-        </scene>
         <!--New Password View Controller-->
         <scene sceneID="aU4-b4-YOF">
             <objects>
                 <viewController id="JgQ-1w-40J" customClass="NewPasswordViewController" customModule="SeguraeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hRg-rM-NIt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-segurae" translatesAutoresizingMaskIntoConstraints="NO" id="z7A-Bk-Hok">
-                                <rect key="frame" x="132" y="148" width="150" height="150"/>
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="DzP-hA-ccV"/>
                                     <constraint firstAttribute="width" constant="150" id="hcM-CF-Bnw"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite sua nova senha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCQ-J8-x6e">
-                                <rect key="frame" x="0.0" y="331" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="287" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="******" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FUd-xg-Wb7">
-                                <rect key="frame" x="38" y="422" width="338" height="45.5"/>
+                                <rect key="frame" x="38" y="378" width="338" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVv-mh-M5j">
-                                <rect key="frame" x="38" y="542.5" width="338" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <rect key="frame" x="38" y="498.5" width="338" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2VM-qI-JNn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Próximo">
-                                    <color key="titleColor" red="0.36632704729999999" green="0.90240234139999997" blue="0.57443255189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <buttonConfiguration key="configuration" style="plain" title="Próximo">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.90980392160000001" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="n60-QN-dr5" kind="show" id="Hoh-bl-khx"/>
                                 </connections>
@@ -220,33 +215,43 @@
             <objects>
                 <viewController id="n60-QN-dr5" customClass="ConfirmNewPasswordViewController" customModule="SeguraeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5eA-GQ-qQX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-segurae" translatesAutoresizingMaskIntoConstraints="NO" id="3tC-xV-RNT">
-                                <rect key="frame" x="132" y="148" width="150" height="150"/>
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="4IU-Jb-CSf"/>
                                     <constraint firstAttribute="height" constant="150" id="CuM-JP-S4A"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirme sua nova senha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ce-M5-i0z">
-                                <rect key="frame" x="0.0" y="331" width="414" height="22"/>
+                                <rect key="frame" x="0.0" y="287" width="414" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="******" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9uz-cP-ltW">
-                                <rect key="frame" x="38" y="423" width="338" height="45.5"/>
+                                <rect key="frame" x="38" y="379" width="338" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kJ-pL-H3S">
-                                <rect key="frame" x="38" y="543.5" width="338" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <rect key="frame" x="38" y="499.5" width="338" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="bJH-7l-Qg2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Salvar">
-                                    <color key="titleColor" red="0.36632704729999999" green="0.90240234139999997" blue="0.57443255189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <buttonConfiguration key="configuration" style="plain" title="Salvar">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.90980392160000001" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="tappedButtonConfirmPassword:" destination="n60-QN-dr5" eventType="touchUpInside" id="Jy9-rk-CuM"/>
                                 </connections>
@@ -279,33 +284,43 @@
             <objects>
                 <viewController id="sLb-3n-bQf" customClass="CreatePasswordViewController" customModule="SeguraeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SKh-7d-N3n">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-segurae" translatesAutoresizingMaskIntoConstraints="NO" id="1N8-gy-jsY">
-                                <rect key="frame" x="132" y="148" width="150" height="150"/>
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Q9K-kg-MVM"/>
                                     <constraint firstAttribute="width" constant="150" id="g1D-Si-iLc"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crie uma senha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0H-L8-5IP">
-                                <rect key="frame" x="0.0" y="331" width="414" height="22"/>
+                                <rect key="frame" x="0.0" y="287" width="414" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="******" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1kz-sV-e7L">
-                                <rect key="frame" x="38" y="423" width="338" height="45.5"/>
+                                <rect key="frame" x="38" y="379" width="338" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BW-lG-cgo">
-                                <rect key="frame" x="38" y="543.5" width="338" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <rect key="frame" x="38" y="499.5" width="338" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Z6J-84-xeC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Próximo">
-                                    <color key="titleColor" red="0.36632704729999999" green="0.90240234139999997" blue="0.57443255189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <buttonConfiguration key="configuration" style="plain" title="Próximo">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.90980392160000001" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="tappedButtonConfirmPassword:" destination="sLb-3n-bQf" eventType="touchUpInside" id="EBU-dV-yLw"/>
                                     <segue destination="co2-VY-8iI" kind="show" id="D41-tG-uV6"/>
@@ -339,11 +354,11 @@
             <objects>
                 <viewController id="BOr-Ha-bRx" customClass="DeleteAllViewController" customModule="SeguraeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yw7-1k-ykn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcM-Vp-iQ3">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-clean01" translatesAutoresizingMaskIntoConstraints="NO" id="Xna-al-GRJ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="182"/>
@@ -358,15 +373,22 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwz-Ev-Q4q">
-                                        <rect key="frame" x="82" y="567" width="250" height="42"/>
-                                        <color key="backgroundColor" red="0.36632704729999999" green="0.90240234139999997" blue="0.57443255189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="82" y="567" width="250" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="T0B-cN-tcc"/>
+                                            <constraint firstAttribute="height" constant="48" id="sJ6-Eo-0xT"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Confirmar">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="Confirmar">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.34901960780000002" green="0.90980392160000001" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -395,40 +417,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97J-fk-Nh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="1298"/>
+            <point key="canvasLocation" x="813" y="1303"/>
         </scene>
         <!--Create Password View Controller-->
         <scene sceneID="ik0-37-o2w">
             <objects>
                 <viewController id="co2-VY-8iI" customClass="CreatePasswordViewController" customModule="SeguraeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fSg-b9-91A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-segurae" translatesAutoresizingMaskIntoConstraints="NO" id="pyT-cy-WeY">
-                                <rect key="frame" x="132" y="148" width="150" height="150"/>
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="PaD-yb-NEj"/>
                                     <constraint firstAttribute="width" constant="150" id="mSC-46-Gk9"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirme sua senha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuB-Oh-9bt">
-                                <rect key="frame" x="0.0" y="331" width="414" height="22"/>
+                                <rect key="frame" x="0.0" y="287" width="414" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="******" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2zu-bs-eBS">
-                                <rect key="frame" x="38" y="423" width="338" height="45.5"/>
+                                <rect key="frame" x="38" y="379" width="338" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuX-Rd-7Bo">
-                                <rect key="frame" x="38" y="543.5" width="338" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <rect key="frame" x="38" y="499.5" width="338" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="768-AI-2LG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Salvar">
-                                    <color key="titleColor" red="0.36632704729999999" green="0.90240234139999997" blue="0.57443255189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <buttonConfiguration key="configuration" style="plain" title="Salvar">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.90980392160000001" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="tappedButtonConfirmPassword:" destination="co2-VY-8iI" eventType="touchUpInside" id="Dz4-Vj-vLQ"/>
                                 </connections>

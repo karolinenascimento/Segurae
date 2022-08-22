@@ -43,14 +43,17 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kg-Cz-KSn">
-                                <rect key="frame" x="89" y="564" width="197" height="30"/>
+                                <rect key="frame" x="89" y="564" width="197" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="tZS-YM-RPI"/>
+                                    <constraint firstAttribute="height" constant="48" id="tZS-YM-RPI"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Próximo">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.34901960784313724" green="0.90980392156862744" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="xcf-do-Vw1" kind="show" id="HCh-Ag-Vf6"/>
@@ -118,14 +121,17 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzD-co-Rpq">
-                                <rect key="frame" x="89" y="564" width="197" height="30"/>
+                                <rect key="frame" x="89" y="564" width="197" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="YeY-Ft-R64"/>
+                                    <constraint firstAttribute="height" constant="48" id="YeY-Ft-R64"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Próximo">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.90980392160000001" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="igG-Zw-8mY" kind="show" id="Pmh-GW-Daz"/>
@@ -167,14 +173,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUI-v1-Aze">
-                                <rect key="frame" x="89" y="564" width="197" height="30"/>
+                                <rect key="frame" x="89" y="564" width="197" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="PWg-Le-Bia"/>
+                                    <constraint firstAttribute="height" constant="48" id="PWg-Le-Bia"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Próximo">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.90980392160000001" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="Qrm-AO-OoK" kind="show" id="5gj-B3-CvE"/>
@@ -268,14 +277,17 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrU-uD-2vt">
-                                <rect key="frame" x="89" y="564" width="197" height="30"/>
+                                <rect key="frame" x="89" y="564" width="197" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ni3-m5-wgl"/>
+                                    <constraint firstAttribute="height" constant="48" id="Ni3-m5-wgl"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Finalizar">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.90980392160000001" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="pnG-du-a9c" kind="presentation" modalPresentationStyle="fullScreen" id="7gx-Rc-530"/>
@@ -348,9 +360,6 @@
         </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
