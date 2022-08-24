@@ -14,6 +14,11 @@
 		812E325128A98F1A00A64934 /* doLoginEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */; };
 		812E325328A98F2F00A64934 /* doLoginPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */; };
 		812E325528A98F7200A64934 /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */; };
+		8158025B28B50B8A006611A2 /* Expenses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8158025A28B50B8A006611A2 /* Expenses.storyboard */; };
+		8158025E28B56310006611A2 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158025C28B56310006611A2 /* CategoryCollectionViewCell.swift */; };
+		8158025F28B56310006611A2 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8158025D28B56310006611A2 /* CategoryCollectionViewCell.xib */; };
+		8158026128B56552006611A2 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158026028B56552006611A2 /* CategoryModel.swift */; };
+		8158026328B56864006611A2 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158026228B56864006611A2 /* ExpensesViewController.swift */; };
 		9A5F344E28A5BD9600EFA032 /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5F344D28A5BD9600EFA032 /* Config.storyboard */; };
 		9A7F1CCB28A7246100CD6FB9 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F1CCA28A7246100CD6FB9 /* ConfigViewController.swift */; };
 		9AAD8E7528AB4BDF00385A3C /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAD8E7428AB4BDF00385A3C /* GeneralModel.swift */; };
@@ -67,6 +72,11 @@
 		812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doLoginEmailViewController.swift; sourceTree = "<group>"; };
 		812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doLoginPasswordViewController.swift; sourceTree = "<group>"; };
 		812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
+		8158025A28B50B8A006611A2 /* Expenses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Expenses.storyboard; sourceTree = "<group>"; };
+		8158025C28B56310006611A2 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		8158025D28B56310006611A2 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		8158026028B56552006611A2 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		8158026228B56864006611A2 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		9A5F344D28A5BD9600EFA032 /* Config.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		9A7F1CCA28A7246100CD6FB9 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		9AAD8E7428AB4BDF00385A3C /* GeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
@@ -149,6 +159,18 @@
 			path = LoginCreateAccount;
 			sourceTree = "<group>";
 		};
+		8158025928B50B6F006611A2 /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				8158025A28B50B8A006611A2 /* Expenses.storyboard */,
+				8158026228B56864006611A2 /* ExpensesViewController.swift */,
+				8158025C28B56310006611A2 /* CategoryCollectionViewCell.swift */,
+				8158025D28B56310006611A2 /* CategoryCollectionViewCell.xib */,
+				8158026028B56552006611A2 /* CategoryModel.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
 		9A5F344C28A5BD4900EFA032 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +246,7 @@
 		D511A26F28A1C12A008D6E69 /* SeguraeApp */ = {
 			isa = PBXGroup;
 			children = (
+				8158025928B50B6F006611A2 /* Expenses */,
 				9A5F344C28A5BD4900EFA032 /* Config */,
 				D530DF7728A6A13400AE6967 /* FinancialManager */,
 				D592293428A47972001A3762 /* Home */,
@@ -338,10 +361,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AAD8E8628AB51CD00385A3C /* OthersOptionsTableViewCell.xib in Resources */,
+				8158025B28B50B8A006611A2 /* Expenses.storyboard in Resources */,
 				D530DF8728A7013A00AE6967 /* ValueView.xib in Resources */,
 				D592293A28A482BA001A3762 /* ValuesManagerView.xib in Resources */,
 				D530DF7F28A6A6A300AE6967 /* InputValueTableViewCell.xib in Resources */,
 				D530DF8328A6BA0C00AE6967 /* FinancialManager.storyboard in Resources */,
+				8158025F28B56310006611A2 /* CategoryCollectionViewCell.xib in Resources */,
 				D511A27D28A1C12C008D6E69 /* LaunchScreen.storyboard in Resources */,
 				9AAD8E8028AB4F9F00385A3C /* SecurityTableViewCell.xib in Resources */,
 				9AAD8E8D28AB54A600385A3C /* ExitTableViewCell.xib in Resources */,
@@ -367,6 +392,7 @@
 				9AAD8E7F28AB4F9F00385A3C /* SecurityTableViewCell.swift in Sources */,
 				9AAD8E8C28AB54A600385A3C /* ExitTableViewCell.swift in Sources */,
 				9AE5F15228B1C110004382F2 /* CurrentPasswordViewController.swift in Sources */,
+				8158025E28B56310006611A2 /* CategoryCollectionViewCell.swift in Sources */,
 				D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */,
 				9AAD8E7A28AB4C4A00385A3C /* ProfileTableViewCell.swift in Sources */,
 				9A7F1CCB28A7246100CD6FB9 /* ConfigViewController.swift in Sources */,
@@ -383,6 +409,7 @@
 				811A396428A954170022AF82 /* PasswordViewController.swift in Sources */,
 				D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */,
 				D530DF8B28A708B200AE6967 /* ExitValueViewController.swift in Sources */,
+				8158026328B56864006611A2 /* ExpensesViewController.swift in Sources */,
 				812E325328A98F2F00A64934 /* doLoginPasswordViewController.swift in Sources */,
 				9AE5F15F28B1CE12004382F2 /* CreatePasswordViewController.swift in Sources */,
 				811A396228A953D80022AF82 /* EmailAccountViewController.swift in Sources */,
@@ -394,6 +421,7 @@
 				D530DF7B28A6A20C00AE6967 /* InformationView.swift in Sources */,
 				D530DF8528A6CE8C00AE6967 /* ExitFinancialValueViewController.swift in Sources */,
 				D530DF8928A701D700AE6967 /* ValueView.swift in Sources */,
+				8158026128B56552006611A2 /* CategoryModel.swift in Sources */,
 				D592293628A479BA001A3762 /* HomeViewController.swift in Sources */,
 				D592293C28A482CC001A3762 /* ValuesManagerView.swift in Sources */,
 				D530DF7E28A6A6A300AE6967 /* InputValueTableViewCell.swift in Sources */,

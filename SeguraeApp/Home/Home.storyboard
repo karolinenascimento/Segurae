@@ -196,11 +196,23 @@ Vinicius!</string>
                     <connections>
                         <segue destination="0UX-IX-0W1" kind="relationship" relationship="viewControllers" id="ta0-jZ-O5m"/>
                         <segue destination="IVa-Sk-Mf0" kind="relationship" relationship="viewControllers" id="Npn-WA-sJd"/>
+                        <segue destination="uSQ-qq-WNe" kind="relationship" relationship="viewControllers" id="8qI-Vd-BRq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPR-3w-9hE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.22429906542056" y="79.049676025917933"/>
+        </scene>
+        <!--Expenses-->
+        <scene sceneID="AKY-Me-iPm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Expenses" id="bqb-sm-V4j" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="n2q-HN-ySx"/>
+                    <navigationItem key="navigationItem" id="YTF-oz-Z1X"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vUv-my-CJo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2401" y="570"/>
         </scene>
         <!--Config-->
         <scene sceneID="eSL-uT-Lm7">
@@ -211,6 +223,23 @@ Vinicius!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nb8-p9-swh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="916.82242990654197" y="813.82289416846663"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="2Tr-5N-Mb7">
+            <objects>
+                <navigationController id="uSQ-qq-WNe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="x5W-b9-DJM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d8y-S8-dGJ">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bqb-sm-V4j" kind="relationship" relationship="rootViewController" id="xP7-Q7-O9w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ol-cg-KpS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472" y="738"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EZi-qn-hAf">
