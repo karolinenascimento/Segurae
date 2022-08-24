@@ -24,16 +24,25 @@ class ExpensesViewController: UIViewController {
         categoryCollectionView.dataSource = self
         categoryCollectionView.register(CategoryCollectionViewCell.nib(), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
         
+        if let layout = self.categoryCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+            layout.minimumLineSpacing = 60
+            layout.itemSize.width = 90
+            layout.itemSize.height = 100
+            layout.collectionView?.backgroundColor = .darkGray
+            
+        }
+        
     }
 
     func setCategoryData() {
         categoryItens.append(contentsOf: [
-                            CategoryModel(categoryIcon: "alimentacao", categoryName: "Alimentação"),
-                            CategoryModel(categoryIcon: "casa", categoryName: "Casa"),
-                            CategoryModel(categoryIcon: "lazer", categoryName: "Lazer"),
-                            CategoryModel(categoryIcon: "mercado", categoryName: "Mercado"),
-                            CategoryModel(categoryIcon: "transporte", categoryName: "Transporte"),
-                            CategoryModel(categoryIcon: "compras", categoryName: "Compras em geral")
+                            CategoryModel(categoryIcon: UIImage(systemName: "fork.knife.circle") ?? UIImage(), categoryName: "Alimentação"),
+                            CategoryModel(categoryIcon: UIImage(systemName: "house.circle.fill") ?? UIImage(), categoryName: "Casa"),
+                            CategoryModel(categoryIcon: UIImage(systemName: "sun.max.circle") ?? UIImage(), categoryName: "Lazer"),
+                            CategoryModel(categoryIcon: UIImage(systemName: "cart.circle.fill") ?? UIImage(), categoryName: "Mercado"),
+                            CategoryModel(categoryIcon: UIImage(systemName: "car.circle.fill") ?? UIImage(), categoryName: "Transporte"),
+                            CategoryModel(categoryIcon: UIImage(systemName: "bag.circle.fill") ?? UIImage(), categoryName: "Geral")
             ])
         
     }
@@ -41,6 +50,7 @@ class ExpensesViewController: UIViewController {
 }
 
 extension ExpensesViewController: UICollectionViewDelegate {
+    
     
 }
 
@@ -55,17 +65,25 @@ extension ExpensesViewController: UICollectionViewDataSource {
         else {
             return UICollectionViewCell()
         }
+        
         cell.setupCell(with: categoryItens[indexPath.item])
+    
+        
         
         return cell
     }
+    
+    
     
     
 }
 
 extension ExpensesViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (self.view.frame.width / 2) - 10, height: collectionView.frame.height)
+//        return CGSize(width: (self.view.frame.width / 2) - 10, height: collectionView.frame.height)
+        return CGSize(width: 90, height: 100)
     }
+    
+    
     
 }

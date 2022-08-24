@@ -9,6 +9,6 @@ import Foundation
 import UIKit
 
 struct CategoryModel {
-    let categoryIcon: String
+    let categoryIcon: UIImage
     let categoryName: String
 }

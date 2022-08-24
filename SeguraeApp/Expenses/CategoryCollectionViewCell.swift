@@ -22,9 +22,9 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     }
     
     func setupCell(with category: CategoryModel) {
-        categoryImageView.image = UIImage(named: category.categoryIcon)
+        categoryImageView.image = category.categoryIcon
         categoryLabel.text = category.categoryName
     }
-
+    
 }
 
