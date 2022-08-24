@@ -19,7 +19,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaj-Q7-Xkv" userLabel="Content View">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="90"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bag" translatesAutoresizingMaskIntoConstraints="NO" id="asb-gY-dJR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fork" translatesAutoresizingMaskIntoConstraints="NO" id="asb-gY-dJR">
                                 <rect key="frame" x="10" y="0.0" width="80" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="nhN-Zp-ZhX"/>
@@ -63,6 +63,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="bag" width="128" height="128"/>
+        <image name="fork" width="128" height="128"/>
     </resources>
 </document>

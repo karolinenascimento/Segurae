@@ -26,7 +26,7 @@ class ExpensesViewController: UIViewController {
         
         if let layout = self.categoryCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
-            layout.minimumLineSpacing = 60
+            layout.minimumLineSpacing = 70
             layout.itemSize.width = 90
             layout.itemSize.height = 100
             layout.collectionView?.backgroundColor = .darkGray
@@ -37,9 +37,9 @@ class ExpensesViewController: UIViewController {
 
     func setCategoryData() {
         categoryItens.append(contentsOf: [
-                            CategoryModel(categoryIcon: UIImage(systemName: "fork.knife.circle") ?? UIImage(), categoryName: "Alimentação"),
+                            CategoryModel(categoryIcon: UIImage(systemName: "fork.knife.circle.fill") ?? UIImage(), categoryName: "Alimentação"),
                             CategoryModel(categoryIcon: UIImage(systemName: "house.circle.fill") ?? UIImage(), categoryName: "Casa"),
-                            CategoryModel(categoryIcon: UIImage(systemName: "sun.max.circle") ?? UIImage(), categoryName: "Lazer"),
+                            CategoryModel(categoryIcon: UIImage(systemName: "sun.max.circle.fill") ?? UIImage(), categoryName: "Lazer"),
                             CategoryModel(categoryIcon: UIImage(systemName: "cart.circle.fill") ?? UIImage(), categoryName: "Mercado"),
                             CategoryModel(categoryIcon: UIImage(systemName: "car.circle.fill") ?? UIImage(), categoryName: "Transporte"),
                             CategoryModel(categoryIcon: UIImage(systemName: "bag.circle.fill") ?? UIImage(), categoryName: "Geral")

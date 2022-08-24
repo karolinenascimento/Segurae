@@ -224,11 +224,13 @@ Vinicius!</string>
             </objects>
             <point key="canvasLocation" x="916.82242990654197" y="813.82289416846663"/>
         </scene>
-        <!--Item-->
+        <!--Despesa-->
         <scene sceneID="2Tr-5N-Mb7">
             <objects>
                 <navigationController id="uSQ-qq-WNe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="x5W-b9-DJM"/>
+                    <tabBarItem key="tabBarItem" title="Despesa" image="plus.circle.fill" catalog="system" selectedImage="plus.circle.fill" id="x5W-b9-DJM">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d8y-S8-dGJ">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -308,6 +310,7 @@ Vinicius!</string>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="img_user" width="85" height="85"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
