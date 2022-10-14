@@ -16,7 +16,6 @@ class Tutorial2ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     private func configureImageView() {
         tutorial2ImageView.layer.cornerRadius = 10
         tutorial2ImageView.layer.borderWidth = 2.0

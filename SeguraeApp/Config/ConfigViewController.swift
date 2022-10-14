@@ -61,8 +61,8 @@ class ConfigViewController: UIViewController {
     }
     
 }
-    
-    // MARK: - EXTENSIONS
+
+// MARK: - EXTENSIONS
 
 extension ConfigViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -73,7 +73,7 @@ extension ConfigViewController: UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 && indexPath.row == 2 {
-                performSegue(withIdentifier: "currentPasswordSegue", sender: nil)
+            performSegue(withIdentifier: "currentPasswordSegue", sender: nil)
         } else if indexPath.section == 1 && indexPath.row == 0 {
             performSegue(withIdentifier: "createPasswordSegue", sender: nil)
         } else if indexPath.section == 2 && indexPath.row == 0 {
@@ -96,13 +96,12 @@ extension ConfigViewController: UITableViewDataSource {
             return nil
         }
     }
-            func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-                let vw = UITableViewHeaderFooterView()
-//                vw.backgroundView?.backgroundColor = UIColor.black
-                vw.contentView.backgroundColor = UIColor.black
-                vw.textLabel?.textColor = UIColor.white
-                return vw
-            }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let vw = UITableViewHeaderFooterView()
+        vw.contentView.backgroundColor = UIColor.black
+        vw.textLabel?.textColor = UIColor.white
+        return vw
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 4

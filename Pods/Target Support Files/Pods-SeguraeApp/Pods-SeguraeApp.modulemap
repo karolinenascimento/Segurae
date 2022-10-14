@@ -1,0 +1,6 @@
+framework module Pods_SeguraeApp {
+  umbrella header "Pods-SeguraeApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

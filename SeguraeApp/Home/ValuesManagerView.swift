@@ -14,13 +14,9 @@ protocol ValuesManagerViewDelegate {
 
 class ValuesManagerView: UIView {
     
-    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var valueLabel: UILabel!
-    
     @IBOutlet weak var managerButton: UIButton!
-    
     
     var delegate: ValuesManagerViewDelegate?
     
@@ -37,7 +33,8 @@ class ValuesManagerView: UIView {
     }
     
     @IBAction func managerAction(_ sender: UIButton) {
+        
         delegate?.didTapButton(view: self)
+
     }
-    
 }

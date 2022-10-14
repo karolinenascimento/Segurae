@@ -13,6 +13,7 @@ class EmailAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        createAccountEmailTextField.text = "123231421"
 
         // Do any additional setup after loading the view.
     }

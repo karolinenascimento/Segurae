@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,20 +28,20 @@
                                     <constraint firstAttribute="width" constant="4" id="SWj-e0-Z4m"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor de entrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3g-LH-KeN">
-                                <rect key="frame" x="52" y="16" width="135.5" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descricao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3g-LH-KeN">
+                                <rect key="frame" x="52" y="16" width="82.5" height="22"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo atual:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxc-bs-6hg">
-                                <rect key="frame" x="52" y="72" width="85" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Despesa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxc-bs-6hg">
+                                <rect key="frame" x="52" y="72" width="67.5" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccD-1m-OLl">
-                                <rect key="frame" x="145" y="72" width="61" height="20"/>
+                                <rect key="frame" x="127.5" y="72" width="61" height="20"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -52,15 +53,6 @@
                                     <constraint firstAttribute="height" constant="2" id="iVW-xT-UYn"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgc-0T-vmJ">
-                                <rect key="frame" x="287.5" y="66.5" width="42.5" height="31"/>
-                                <color key="tintColor" red="0.34901960784313724" green="0.90980392156862744" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system"/>
-                                <connections>
-                                    <action selector="editAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="91J-5g-BqU"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.36470589040000001" green="0.36470589040000001" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -74,10 +66,8 @@
                             <constraint firstAttribute="bottom" secondItem="XXo-Dv-aDu" secondAttribute="bottom" constant="8" id="gLs-ND-XhT"/>
                             <constraint firstItem="ccD-1m-OLl" firstAttribute="leading" secondItem="vxc-bs-6hg" secondAttribute="trailing" constant="8" id="lrp-gY-YDN"/>
                             <constraint firstItem="vxc-bs-6hg" firstAttribute="leading" secondItem="XXo-Dv-aDu" secondAttribute="trailing" constant="24" id="m3A-Vt-mBF"/>
-                            <constraint firstAttribute="trailing" secondItem="jgc-0T-vmJ" secondAttribute="trailing" constant="16" id="m8S-ud-wpd"/>
                             <constraint firstItem="XXo-Dv-aDu" firstAttribute="leading" secondItem="G9q-2j-hM4" secondAttribute="leading" constant="24" id="pEk-ld-LSm"/>
                             <constraint firstItem="De8-tB-JyN" firstAttribute="top" secondItem="o3g-LH-KeN" secondAttribute="bottom" constant="16" id="tFm-nR-FH9"/>
-                            <constraint firstItem="jgc-0T-vmJ" firstAttribute="centerY" secondItem="ccD-1m-OLl" secondAttribute="centerY" id="u6D-je-qgC"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -98,7 +88,4 @@
             <point key="canvasLocation" x="179.71014492753625" y="121.875"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="pencil" catalog="system" width="128" height="113"/>
-    </resources>
 </document>

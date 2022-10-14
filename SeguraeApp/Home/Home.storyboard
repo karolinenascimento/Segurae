@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Sl-Dv-ymt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Sl-Dv-ymt">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -35,7 +36,7 @@ Vinicius!</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqt-cb-QUg">
-                                                        <rect key="frame" x="357" y="97" width="47" height="31"/>
+                                                        <rect key="frame" x="353" y="95.333333333333329" width="51" height="34.333333333333329"/>
                                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="gearshape" catalog="system"/>
@@ -60,15 +61,27 @@ Vinicius!</string>
                                                             <constraint firstAttribute="width" constant="93" id="jgl-yj-I2J"/>
                                                         </constraints>
                                                     </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Requisitando" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g9-CV-vhM">
+                                                        <rect key="frame" x="125" y="154" width="295" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="utO-Rl-koQ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                        <color key="textColor" red="0.095202960069999995" green="0.88216012720000003" blue="0.67077094319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="fqt-cb-QUg" secondAttribute="trailing" constant="24" id="Cbg-ED-yRo"/>
                                                     <constraint firstItem="fqt-cb-QUg" firstAttribute="centerY" secondItem="shb-Mi-qVi" secondAttribute="centerY" id="Hxv-vB-6hc"/>
                                                     <constraint firstItem="vYv-TX-Vzu" firstAttribute="centerY" secondItem="shb-Mi-qVi" secondAttribute="centerY" id="WhG-E3-9dM"/>
+                                                    <constraint firstItem="4g9-CV-vhM" firstAttribute="top" secondItem="ICy-Ag-hiU" secondAttribute="bottom" constant="8" id="XUH-EU-Oiu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4g9-CV-vhM" secondAttribute="trailing" constant="8" id="bKH-fS-hiK"/>
                                                     <constraint firstItem="ICy-Ag-hiU" firstAttribute="leading" secondItem="vYv-TX-Vzu" secondAttribute="trailing" constant="24" id="kDZ-DX-TME"/>
                                                     <constraint firstAttribute="height" constant="225" id="lza-1o-DWy"/>
                                                     <constraint firstItem="ICy-Ag-hiU" firstAttribute="centerY" secondItem="shb-Mi-qVi" secondAttribute="centerY" id="oNp-cA-1lg"/>
+                                                    <constraint firstItem="4g9-CV-vhM" firstAttribute="leading" secondItem="vYv-TX-Vzu" secondAttribute="trailing" constant="8" id="thl-t9-tYw"/>
                                                     <constraint firstItem="vYv-TX-Vzu" firstAttribute="leading" secondItem="shb-Mi-qVi" secondAttribute="leading" constant="24" id="w8Z-XG-Rxp"/>
                                                 </constraints>
                                             </view>
@@ -123,6 +136,7 @@ Vinicius!</string>
                     </view>
                     <navigationItem key="navigationItem" id="EVK-XV-1f6"/>
                     <connections>
+                        <outlet property="apiLabel" destination="4g9-CV-vhM" id="tEA-fU-0s4"/>
                         <outlet property="enterValuesManagerView" destination="JWZ-Jc-51S" id="REl-cn-faQ"/>
                         <outlet property="exitValuesManager" destination="bNu-2R-h2G" id="GIW-OC-jHO"/>
                         <outlet property="greetingLabel" destination="ICy-Ag-hiU" id="q0d-AK-Ky3"/>
@@ -167,7 +181,7 @@ Vinicius!</string>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xjg-qM-7Gr">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -232,7 +246,7 @@ Vinicius!</string>
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d8y-S8-dGJ">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -250,7 +264,7 @@ Vinicius!</string>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="fYB-LR-KxI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lbo-Qg-SCs">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -288,7 +302,7 @@ Vinicius!</string>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e4x-5g-CuB">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -306,11 +320,11 @@ Vinicius!</string>
         </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
-        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="house" catalog="system" width="128" height="104"/>
         <image name="img_user" width="85" height="85"/>
-        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

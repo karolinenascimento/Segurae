@@ -10,9 +10,7 @@ import UIKit
 class InputValueTableViewCell: UITableViewCell {
 
     @IBOutlet weak var containerView: UIView!
-    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var valueLabel: UILabel!
     
     override func awakeFromNib() {
@@ -23,10 +21,11 @@ class InputValueTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-       
     }
     
-    @IBAction func editAction(_ sender: Any) {
+    func prepararDespesa(with despesa:Despesa) {
+        
+        valueLabel.text = despesa.despesa
+        titleLabel.text = despesa.descricao
     }
 }

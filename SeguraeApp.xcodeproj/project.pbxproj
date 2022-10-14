@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		462995075EC0932C4DCE9850 /* Pods_SeguraeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474CC8B839F78FFEF4E0BA9F /* Pods_SeguraeApp.framework */; };
 		811A396028A953B40022AF82 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A395F28A953B40022AF82 /* CreateAccountViewController.swift */; };
-		811A396228A953D80022AF82 /* EmailAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396128A953D80022AF82 /* EmailAccountViewController.swift */; };
-		811A396428A954170022AF82 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396328A954170022AF82 /* PasswordViewController.swift */; };
-		811A396628A954570022AF82 /* NameCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A396528A954570022AF82 /* NameCreateViewController.swift */; };
-		812E325128A98F1A00A64934 /* doLoginEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */; };
-		812E325328A98F2F00A64934 /* doLoginPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */; };
 		812E325528A98F7200A64934 /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */; };
+		81379DC328CFEC440085BC0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81379DC228CFEC440085BC0E /* GoogleService-Info.plist */; };
+		814982CE28E0913A002D5C85 /* ExpenseTableViewCellXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814982CC28E0913A002D5C85 /* ExpenseTableViewCellXIB.swift */; };
 		8158025B28B50B8A006611A2 /* Expenses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8158025A28B50B8A006611A2 /* Expenses.storyboard */; };
 		8158025E28B56310006611A2 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158025C28B56310006611A2 /* CategoryCollectionViewCell.swift */; };
 		8158025F28B56310006611A2 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8158025D28B56310006611A2 /* CategoryCollectionViewCell.xib */; };
 		8158026128B56552006611A2 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158026028B56552006611A2 /* CategoryModel.swift */; };
 		8158026328B56864006611A2 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158026228B56864006611A2 /* ExpensesViewController.swift */; };
+		817B364728D7C64B00D3C874 /* SeguraeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 817B364528D7C64B00D3C874 /* SeguraeApp.xcdatamodeld */; };
+		817B364928D7C8F400D3C874 /* ViewControllerCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B364828D7C8F400D3C874 /* ViewControllerCoreData.swift */; };
+		817B364B28D7D42100D3C874 /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B364A28D7D42100D3C874 /* ExpenseTableViewCell.swift */; };
+		81DD926328D143EE0059EE51 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DD926228D143EE0059EE51 /* UserModel.swift */; };
+		81E03B2028E50F8C00A51234 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E03B1F28E50F8C00A51234 /* Service.swift */; };
+		81E03B2228E50FDF00A51234 /* modelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E03B2128E50FDF00A51234 /* modelAPI.swift */; };
+		81EEFFC028C5026A00064627 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEFFBF28C5026A00064627 /* RegisterViewController.swift */; };
+		81EEFFC228C504D500064627 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEFFC128C504D500064627 /* LoginViewController.swift */; };
 		9A5F344E28A5BD9600EFA032 /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5F344D28A5BD9600EFA032 /* Config.storyboard */; };
 		9A7F1CCB28A7246100CD6FB9 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F1CCA28A7246100CD6FB9 /* ConfigViewController.swift */; };
 		9AAD8E7528AB4BDF00385A3C /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAD8E7428AB4BDF00385A3C /* GeneralModel.swift */; };
@@ -65,18 +71,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150188F05D370B5AAA144100 /* Pods-SeguraeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeguraeApp.release.xcconfig"; path = "Target Support Files/Pods-SeguraeApp/Pods-SeguraeApp.release.xcconfig"; sourceTree = "<group>"; };
+		474CC8B839F78FFEF4E0BA9F /* Pods_SeguraeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeguraeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ADFC0E03A5A07AF7FDE033A /* Pods-SeguraeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeguraeApp.debug.xcconfig"; path = "Target Support Files/Pods-SeguraeApp/Pods-SeguraeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		811A395F28A953B40022AF82 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
-		811A396128A953D80022AF82 /* EmailAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAccountViewController.swift; sourceTree = "<group>"; };
-		811A396328A954170022AF82 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
-		811A396528A954570022AF82 /* NameCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCreateViewController.swift; sourceTree = "<group>"; };
-		812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doLoginEmailViewController.swift; sourceTree = "<group>"; };
-		812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doLoginPasswordViewController.swift; sourceTree = "<group>"; };
 		812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
+		81379DC228CFEC440085BC0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		814982CC28E0913A002D5C85 /* ExpenseTableViewCellXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCellXIB.swift; sourceTree = "<group>"; };
 		8158025A28B50B8A006611A2 /* Expenses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Expenses.storyboard; sourceTree = "<group>"; };
 		8158025C28B56310006611A2 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		8158025D28B56310006611A2 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		8158026028B56552006611A2 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		8158026228B56864006611A2 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		817B364628D7C64B00D3C874 /* SeguraeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeguraeApp.xcdatamodel; sourceTree = "<group>"; };
+		817B364828D7C8F400D3C874 /* ViewControllerCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCoreData.swift; sourceTree = "<group>"; };
+		817B364A28D7D42100D3C874 /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
+		81DD926228D143EE0059EE51 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		81E03B1F28E50F8C00A51234 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		81E03B2128E50FDF00A51234 /* modelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelAPI.swift; sourceTree = "<group>"; };
+		81EEFFBF28C5026A00064627 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		81EEFFC128C504D500064627 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9A5F344D28A5BD9600EFA032 /* Config.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		9A7F1CCA28A7246100CD6FB9 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		9AAD8E7428AB4BDF00385A3C /* GeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
@@ -129,12 +143,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				462995075EC0932C4DCE9850 /* Pods_SeguraeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F28AC148239C768A7180BFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ADFC0E03A5A07AF7FDE033A /* Pods-SeguraeApp.debug.xcconfig */,
+				150188F05D370B5AAA144100 /* Pods-SeguraeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A7954A8236B4A990ADE66AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				474CC8B839F78FFEF4E0BA9F /* Pods_SeguraeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		811A395228A93BDA0022AF82 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,12 +180,9 @@
 			isa = PBXGroup;
 			children = (
 				D511A27628A1C12A008D6E69 /* LoginCreateAccount.storyboard */,
-				811A396528A954570022AF82 /* NameCreateViewController.swift */,
-				811A396328A954170022AF82 /* PasswordViewController.swift */,
-				811A396128A953D80022AF82 /* EmailAccountViewController.swift */,
+				81EEFFBF28C5026A00064627 /* RegisterViewController.swift */,
+				81EEFFC128C504D500064627 /* LoginViewController.swift */,
 				811A395F28A953B40022AF82 /* CreateAccountViewController.swift */,
-				812E325028A98F1A00A64934 /* doLoginEmailViewController.swift */,
-				812E325228A98F2F00A64934 /* doLoginPasswordViewController.swift */,
 				812E325428A98F7200A64934 /* PasswordRecoverViewController.swift */,
 			);
 			path = LoginCreateAccount;
@@ -169,6 +198,37 @@
 				8158026028B56552006611A2 /* CategoryModel.swift */,
 			);
 			path = Expenses;
+			sourceTree = "<group>";
+		};
+		81DD926128D143DE0059EE51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81DD926228D143EE0059EE51 /* UserModel.swift */,
+				81E03B2128E50FDF00A51234 /* modelAPI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		81E03B1E28E50F5700A51234 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				81E03B1F28E50F8C00A51234 /* Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		81E03B2328E519FE00A51234 /* Improvements */ = {
+			isa = PBXGroup;
+			children = (
+				D530DF8628A7013A00AE6967 /* ValueView.xib */,
+				D530DF8A28A708B200AE6967 /* ExitValueViewController.swift */,
+				D530DF8828A701D700AE6967 /* ValueView.swift */,
+				D530DF8C28A714F700AE6967 /* EntryValueViewController.swift */,
+				817B364A28D7D42100D3C874 /* ExpenseTableViewCell.swift */,
+				814982CC28E0913A002D5C85 /* ExpenseTableViewCellXIB.swift */,
+				D530DF8028A6B9F400AE6967 /* EnterFinancialValueViewController.swift */,
+			);
+			path = Improvements;
 			sourceTree = "<group>";
 		};
 		9A5F344C28A5BD4900EFA032 /* Config */ = {
@@ -232,6 +292,8 @@
 			children = (
 				D511A26F28A1C12A008D6E69 /* SeguraeApp */,
 				D511A26E28A1C12A008D6E69 /* Products */,
+				4F28AC148239C768A7180BFA /* Pods */,
+				7A7954A8236B4A990ADE66AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,6 +308,8 @@
 		D511A26F28A1C12A008D6E69 /* SeguraeApp */ = {
 			isa = PBXGroup;
 			children = (
+				81E03B1E28E50F5700A51234 /* Services */,
+				81DD926128D143DE0059EE51 /* Models */,
 				8158025928B50B6F006611A2 /* Expenses */,
 				9A5F344C28A5BD4900EFA032 /* Config */,
 				D530DF7728A6A13400AE6967 /* FinancialManager */,
@@ -256,7 +320,11 @@
 				D511A27E28A1C12C008D6E69 /* Info.plist */,
 				D511A27928A1C12C008D6E69 /* Assets.xcassets */,
 				D511A27228A1C12A008D6E69 /* SceneDelegate.swift */,
+				817B364828D7C8F400D3C874 /* ViewControllerCoreData.swift */,
 				D511A27028A1C12A008D6E69 /* AppDelegate.swift */,
+				81379DC228CFEC440085BC0E /* GoogleService-Info.plist */,
+				817B364528D7C64B00D3C874 /* SeguraeApp.xcdatamodeld */,
+				81E03B2328E519FE00A51234 /* Improvements */,
 			);
 			path = SeguraeApp;
 			sourceTree = "<group>";
@@ -265,16 +333,11 @@
 			isa = PBXGroup;
 			children = (
 				D530DF8228A6BA0C00AE6967 /* FinancialManager.storyboard */,
-				D530DF8A28A708B200AE6967 /* ExitValueViewController.swift */,
-				D530DF8028A6B9F400AE6967 /* EnterFinancialValueViewController.swift */,
 				D530DF8428A6CE8C00AE6967 /* ExitFinancialValueViewController.swift */,
 				D530DF7828A6A1F200AE6967 /* InformationView.xib */,
 				D530DF7A28A6A20C00AE6967 /* InformationView.swift */,
 				D530DF7D28A6A6A300AE6967 /* InputValueTableViewCell.xib */,
 				D530DF7C28A6A6A300AE6967 /* InputValueTableViewCell.swift */,
-				D530DF8628A7013A00AE6967 /* ValueView.xib */,
-				D530DF8828A701D700AE6967 /* ValueView.swift */,
-				D530DF8C28A714F700AE6967 /* EntryValueViewController.swift */,
 			);
 			path = FinancialManager;
 			sourceTree = "<group>";
@@ -309,9 +372,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D511A28128A1C12C008D6E69 /* Build configuration list for PBXNativeTarget "SeguraeApp" */;
 			buildPhases = (
+				0157B78A842CC9DFD84C3151 /* [CP] Check Pods Manifest.lock */,
 				D511A26928A1C12A008D6E69 /* Sources */,
 				D511A26A28A1C12A008D6E69 /* Frameworks */,
 				D511A26B28A1C12A008D6E69 /* Resources */,
+				1AAEA4D568E81D504DCCB801 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -371,6 +436,7 @@
 				9AAD8E8028AB4F9F00385A3C /* SecurityTableViewCell.xib in Resources */,
 				9AAD8E8D28AB54A600385A3C /* ExitTableViewCell.xib in Resources */,
 				D511A27A28A1C12C008D6E69 /* Assets.xcassets in Resources */,
+				81379DC328CFEC440085BC0E /* GoogleService-Info.plist in Resources */,
 				9A5F344E28A5BD9600EFA032 /* Config.storyboard in Resources */,
 				9AAD8E7B28AB4C4A00385A3C /* ProfileTableViewCell.xib in Resources */,
 				D530DF7928A6A1F200AE6967 /* InformationView.xib in Resources */,
@@ -383,6 +449,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0157B78A842CC9DFD84C3151 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeguraeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1AAEA4D568E81D504DCCB801 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeguraeApp/Pods-SeguraeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeguraeApp/Pods-SeguraeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeguraeApp/Pods-SeguraeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D511A26928A1C12A008D6E69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -394,7 +502,9 @@
 				9AE5F15228B1C110004382F2 /* CurrentPasswordViewController.swift in Sources */,
 				8158025E28B56310006611A2 /* CategoryCollectionViewCell.swift in Sources */,
 				D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */,
+				817B364B28D7D42100D3C874 /* ExpenseTableViewCell.swift in Sources */,
 				9AAD8E7A28AB4C4A00385A3C /* ProfileTableViewCell.swift in Sources */,
+				817B364928D7C8F400D3C874 /* ViewControllerCoreData.swift in Sources */,
 				9A7F1CCB28A7246100CD6FB9 /* ConfigViewController.swift in Sources */,
 				9AAD8E8528AB51CD00385A3C /* OthersOptionsTableViewCell.swift in Sources */,
 				811A396028A953B40022AF82 /* CreateAccountViewController.swift in Sources */,
@@ -402,29 +512,31 @@
 				9AE5F16728B1D342004382F2 /* DeleteAllViewController.swift in Sources */,
 				9AE5F16228B1CECA004382F2 /* ConfirmPasswordViewController.swift in Sources */,
 				D571C4E828AC55BA0069F59B /* Tutorial2ViewController.swift in Sources */,
-				811A396628A954570022AF82 /* NameCreateViewController.swift in Sources */,
 				9AE5F15628B1C7D2004382F2 /* NewPasswordViewController.swift in Sources */,
 				812E325528A98F7200A64934 /* PasswordRecoverViewController.swift in Sources */,
 				9AE5F15A28B1CA3A004382F2 /* ConfirmNewPasswordViewController.swift in Sources */,
-				811A396428A954170022AF82 /* PasswordViewController.swift in Sources */,
 				D511A27128A1C12A008D6E69 /* AppDelegate.swift in Sources */,
 				D530DF8B28A708B200AE6967 /* ExitValueViewController.swift in Sources */,
 				8158026328B56864006611A2 /* ExpensesViewController.swift in Sources */,
-				812E325328A98F2F00A64934 /* doLoginPasswordViewController.swift in Sources */,
 				9AE5F15F28B1CE12004382F2 /* CreatePasswordViewController.swift in Sources */,
-				811A396228A953D80022AF82 /* EmailAccountViewController.swift in Sources */,
 				D571C4E628AC55BA0069F59B /* Tutorial4ViewController.swift in Sources */,
 				D571C4E728AC55BA0069F59B /* Tutorial3ViewController.swift in Sources */,
-				812E325128A98F1A00A64934 /* doLoginEmailViewController.swift in Sources */,
 				D511A27328A1C12A008D6E69 /* SceneDelegate.swift in Sources */,
 				D530DF8128A6B9F400AE6967 /* EnterFinancialValueViewController.swift in Sources */,
+				81E03B2028E50F8C00A51234 /* Service.swift in Sources */,
+				81EEFFC028C5026A00064627 /* RegisterViewController.swift in Sources */,
 				D530DF7B28A6A20C00AE6967 /* InformationView.swift in Sources */,
+				817B364728D7C64B00D3C874 /* SeguraeApp.xcdatamodeld in Sources */,
 				D530DF8528A6CE8C00AE6967 /* ExitFinancialValueViewController.swift in Sources */,
+				81E03B2228E50FDF00A51234 /* modelAPI.swift in Sources */,
+				81EEFFC228C504D500064627 /* LoginViewController.swift in Sources */,
 				D530DF8928A701D700AE6967 /* ValueView.swift in Sources */,
 				8158026128B56552006611A2 /* CategoryModel.swift in Sources */,
 				D592293628A479BA001A3762 /* HomeViewController.swift in Sources */,
 				D592293C28A482CC001A3762 /* ValuesManagerView.swift in Sources */,
 				D530DF7E28A6A6A300AE6967 /* InputValueTableViewCell.swift in Sources */,
+				81DD926328D143EE0059EE51 /* UserModel.swift in Sources */,
+				814982CE28E0913A002D5C85 /* ExpenseTableViewCellXIB.swift in Sources */,
 				D530DF8D28A714F700AE6967 /* EntryValueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +679,7 @@
 		};
 		D511A28228A1C12C008D6E69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADFC0E03A5A07AF7FDE033A /* Pods-SeguraeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -595,6 +708,7 @@
 		};
 		D511A28328A1C12C008D6E69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150188F05D370B5AAA144100 /* Pods-SeguraeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -643,6 +757,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		817B364528D7C64B00D3C874 /* SeguraeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				817B364628D7C64B00D3C874 /* SeguraeApp.xcdatamodel */,
+			);
+			currentVersion = 817B364628D7C64B00D3C874 /* SeguraeApp.xcdatamodel */;
+			path = SeguraeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D511A26528A1C129008D6E69 /* Project object */;
 }

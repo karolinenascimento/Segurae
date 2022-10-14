@@ -10,9 +10,11 @@ import UIKit
 class PasswordViewController: UIViewController {
     @IBOutlet weak var createAccountImageView: UIImageView!
     @IBOutlet weak var createAccountPasswordTextField: UITextField!
+    var emailTF = EmailAccountViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        createAccountPasswordTextField.text = "2322112"
 
         // Do any additional setup after loading the view.
     }
